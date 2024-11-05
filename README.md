@@ -10,3 +10,19 @@ Feel free to use this data (licensed under MIT) for your own projects (and
 submit a PR to this `README.md` file so we can link to your project).
 
 [Bit Complete Inc.](https://bitcomplete.io/)
+
+## What's inside?
+
+This Turborepo includes the following packages and apps:
+
+- `PlateJS`
+- `Lexical`
+- `TinyMCE`
+- `CKEditor 5`
+- `TipTap`
+
+They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
+
+### Build 
+
+Run `yarn build` to build all monorepos under `complete/` directory
