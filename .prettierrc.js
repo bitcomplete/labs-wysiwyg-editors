@@ -6,11 +6,10 @@ module.exports = {
   arrowParens: 'always',
   endOfLine: 'lf',
   printWidth: 80,
-  semi: true,
+  semi: false,
   singleQuote: false,
   tabWidth: 2,
   trailingComma: 'all',
-
   overrides: [
     {
       files: ['*.js', '*.json', '*.ts', '*.tsx', '*.yml', '*.yaml'],
