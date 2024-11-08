@@ -1,4 +1,5 @@
 # Labs: WYSIWYG Editors
+
 This repository contains a JSON file (see `items.json`) which lists WYSIWYG
 editors (or rich text editors). It includes demo files to preview what these
 editors look like once they've been instantiated / setup.
@@ -16,14 +17,14 @@ submit a PR to this `README.md` file so we can link to your project).
 This Turborepo includes the following packages and apps:
 
 - `PlateJS` - complete
-- `Lexical` - todo
+- `Lexical` - complete
 - `TinyMCE` - todo
 - `CKEditor 5` - todo
-- `TipTap` - todo
+- `TipTap` - complete
 
 They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
 
-### Build 
+### Build
 
 Run `yarn build` to build all monorepos under `complete/` directory
 
@@ -32,7 +33,7 @@ Run `yarn build` to build all monorepos under `complete/` directory
 To get started with a new editor, navigate to the directory `complete/` and run the following command to initialize a new React + TS + Vite JS project:
 
 ```bash
-yarn create vite my-editor --template react-ts 
- ```
+yarn create vite my-editor --template react-ts
+```
 
 Once done, make sure to delete the completed editor's directory from `/todo`
