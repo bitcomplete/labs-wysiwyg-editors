@@ -1,3 +1,4 @@
+import React from 'react';
 
 import type { PlateContentProps } from '@udecode/plate-common/react';
 import type { VariantProps } from 'class-variance-authority';

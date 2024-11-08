@@ -1,3 +1,4 @@
+import React from 'react';
 
 import type { TEditor } from '@udecode/plate-common';
 import type { DropTargetMonitor } from 'react-dnd';
