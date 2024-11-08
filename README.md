@@ -10,3 +10,29 @@ Feel free to use this data (licensed under MIT) for your own projects (and
 submit a PR to this `README.md` file so we can link to your project).
 
 [Bit Complete Inc.](https://bitcomplete.io/)
+
+## What's inside?
+
+This Turborepo includes the following packages and apps:
+
+- `PlateJS` - complete
+- `Lexical` - todo
+- `TinyMCE` - todo
+- `CKEditor 5` - todo
+- `TipTap` - todo
+
+They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
+
+### Build 
+
+Run `yarn build` to build all monorepos under `complete/` directory
+
+### Development
+
+To get started with a new editor, navigate to the directory `complete/` and run the following command to initialize a new React + TS + Vite JS project:
+
+```bash
+yarn create vite my-editor --template react-ts 
+ ```
+
+Once done, make sure to delete the completed editor's directory from `/todo`
