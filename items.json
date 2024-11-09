@@ -1,1 +1,16 @@
-[]
+{
+    "editors": ["Tiptap Editor", "Lexical", "TinyMCE", "Plate", "CKEditor 5"],
+    "features": [
+        "Bold",
+        "Italics",
+        "Underline",
+        "Strikethrough",
+        "Bullet lists",
+        "Ordered lists",
+        "Links",
+        "Blockquotes",
+        "Headings",
+        "Code",
+        "Inline code"
+    ]
+}

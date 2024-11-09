@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexical Editor with Vanilla JS</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="editor">
+      <h1>Lexical Basic - Vanilla JS</h1>
+      <button id="h1">H1</button>
+      <button id="h2">H2</button>
+      <button id="bold">Bold</button>
+      <button id="italic">Italic</button>
+      <button id="underline">Underline</button>
+      <button id="strike">Strike</button>
+      <button id="inline-code">Inline Code</button>
+      <button id="bullet">Bullet List</button>
+      <button id="ordered">Ordered List</button>
+      <button id="link">Link</button>
+      <button id="quote">Quote</button>
+      <button id="code">Code</button>
+      <div class="editor-wrapper">
+        <div id="lexical-editor" contenteditable></div>
+      </div>
+      <h4>Editor state:</h4>
+      <textarea id="lexical-state"></textarea>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
