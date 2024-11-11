@@ -64,6 +64,38 @@
             "publisher": "Udecode",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.11:tiptap",
+        "slug": "tiptap",
+        "active": true,
+        "labels": {
+            "primary": "TipTap Editor",
+            "secondary": "TipTap Editor"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "tiptap",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "2.9.1",
+            "description": "The headless rich text editor framework for web artisans.",
+            "githubStars": 27400,
+            "githubLink": "https://github.com/ueberdosis/tiptap",
+            "npmLink": "https://www.npmjs.com/package/tiptap",
+            "websiteLink": "https://tiptap.dev/",
+            "components": [],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/ueberdosis/tiptap/blob/develop/LICENSE.md",
+            "releaseDate": "2024-10-23",
+            "originalReleaseDate": "2018-09-02",
+            "publisher": "TipTap",
+            "comment": null
+        }
     }
-
 ]
