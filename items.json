@@ -1,16 +1,101 @@
-{
-    "editors": ["Tiptap Editor", "Lexical", "TinyMCE", "Plate", "CKEditor 5"],
-    "features": [
-        "Bold",
-        "Italics",
-        "Underline",
-        "Strikethrough",
-        "Bullet lists",
-        "Ordered lists",
-        "Links",
-        "Blockquotes",
-        "Headings",
-        "Code",
-        "Inline code"
-    ]
-}
+[
+    {
+        "id": "id:item:v2024.11.11:lexical",
+        "slug": "lexical",
+        "active": true,
+        "labels": {
+            "primary": "Lexical",
+            "secondary": "Lexical"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "lexical",
+            "iframeRootPath": "index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "0.19.0",
+            "description": "Lexical is an extensible text editor framework that provides excellent reliability, accessibility and performance.",
+            "githubStars": 19700,
+            "githubLink": "https://github.com/facebook/lexical",
+            "npmLink": "https://www.npmjs.com/package/lexical",
+            "websiteLink": "https://lexical.dev/",
+            "components": [],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/facebook/lexical/blob/main/LICENSE",
+            "releaseDate": "2024-10-28",
+            "originalReleaseDate": "2022-01-10",
+            "publisher": "Meta",
+            "comment": null
+        }
+    },
+    {
+        "id": "id:item:v2024.11.11:platejs",
+        "slug": "platejs",
+        "active": true,
+        "labels": {
+            "primary": "Plate JS",
+            "secondary": "Plate JS"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "plate-js",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 2
+            }
+        },
+        "properties": {
+            "version": "39.0.0",
+            "description": "The rich-text editor for React.",
+            "githubStars": 11800,
+            "githubLink": "https://github.com/udecode/plate",
+            "npmLink": "https://www.npmjs.com/package/@udecode/plate",
+            "websiteLink": "https://platejs.org/",
+            "components": [],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/udecode/plate/blob/main/LICENSE",
+            "releaseDate": "2024-10-01",
+            "originalReleaseDate": "2021-07-23",
+            "publisher": "Udecode",
+            "comment": null
+        }
+    },
+    {
+        "id": "id:item:v2024.11.11:tiptap",
+        "slug": "tiptap",
+        "active": true,
+        "labels": {
+            "primary": "TipTap Editor",
+            "secondary": "TipTap Editor"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "tiptap",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "2.9.1",
+            "description": "The headless rich text editor framework for web artisans.",
+            "githubStars": 27400,
+            "githubLink": "https://github.com/ueberdosis/tiptap",
+            "npmLink": "https://www.npmjs.com/package/tiptap",
+            "websiteLink": "https://tiptap.dev/",
+            "components": [],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/ueberdosis/tiptap/blob/develop/LICENSE.md",
+            "releaseDate": "2024-10-23",
+            "originalReleaseDate": "2018-09-02",
+            "publisher": "TipTap",
+            "comment": null
+        }
+    }
+]
