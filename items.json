@@ -97,5 +97,38 @@
             "publisher": "TipTap",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.11:tinymce",
+        "slug": "tiny-mce",
+        "active": true,
+        "labels": {
+            "primary": "TinyMCE Editor",
+            "secondary": "TinyMCE Editor"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "tiny-mce",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "7.5.0",
+            "description": "The world's #1 JavaScript library for rich text editing. Available for React, Vue and Angular",
+            "githubStars": 15000,
+            "githubLink": "https://github.com/tinymce/tinymce",
+            "npmLink": "https://www.npmjs.com/package/tinymce",
+            "websiteLink": "https://www.tiny.cloud/",
+            "components": [],
+            "licenseKey": "gpl-2.0-or-later",
+            "licenseName": "GPL-2.0-or-later",
+            "licenseURL": "https://github.com/tinymce/tinymce/blob/main/LICENSE.md",
+            "releaseDate": "2024-11-05",
+            "originalReleaseDate": "2014-05-06",
+            "publisher": "Ephox Corporation DBA Tiny Technologies, Inc.",
+            "comment": null
+        }
     }
 ]
