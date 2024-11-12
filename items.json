@@ -130,5 +130,38 @@
             "publisher": "Ephox Corporation DBA Tiny Technologies, Inc.",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.11:ckeditor5",
+        "slug": "ckeditor",
+        "active": true,
+        "labels": {
+            "primary": "CKEditor 5",
+            "secondary": "CKEditor 5"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "ckeditor",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "43.3.1",
+            "description": "Powerful rich text editor framework with a modular architecture, modern integrations, and features like collaborative editing.",
+            "githubStars": 9600,
+            "githubLink": "https://github.com/ckeditor/ckeditor5",
+            "npmLink": "https://www.npmjs.com/package/@ckeditor/ckeditor5-react",
+            "websiteLink": "https://ckeditor.com/",
+            "components": [],
+            "licenseKey": "gpl-2.0-or-later",
+            "licenseName": "GPL-2.0-or-later",
+            "licenseURL": "https://github.com/ckeditor/ckeditor5/blob/master/LICENSE.md",
+            "releaseDate": "2024-11-06",
+            "originalReleaseDate": "2016-07-08",
+            "publisher": "CKSource Holding sp. z o.o.",
+            "comment": null
+        }
     }
 ]
