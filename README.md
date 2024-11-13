@@ -18,7 +18,7 @@ This Turborepo includes the following packages and apps:
 
 - `PlateJS` - complete
 - `Lexical` - complete
-- `TinyMCE` - todo
+- `TinyMCE` - complete
 - `CKEditor 5` - todo
 - `TipTap` - complete
 
