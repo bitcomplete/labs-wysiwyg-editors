@@ -19,7 +19,7 @@ This Turborepo includes the following packages and apps:
 - `PlateJS` - complete
 - `Lexical` - complete
 - `TinyMCE` - complete
-- `CKEditor 5` - todo
+- `CKEditor 5` - complete
 - `TipTap` - complete
 
 They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
