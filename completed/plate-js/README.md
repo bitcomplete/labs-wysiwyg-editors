@@ -1,3 +1,18 @@
+### Plate JS repo for Labs-WYSIWYG project
+
+This repo is a fork of the `vite-react-ts` template with Plate JS installed on top. There are multiple versions of Plate JS editor available for demo, each present inside `./src/pages` directory. Each folder inside `./src/pages` directory is bundled as a separate page by Vite.
+
+### Development
+1. Run `yarn` to install dependencies.
+2. Run `yarn dev` to start the development server.
+
+By default, the server opens full version of Plate JS `http://localhost:5173/pages/full/index.html`. You can change `full` to `basic` or any other version available inside `src/pages` to open other versions of Plate JS in local dev.
+
+### Production
+1. Run `yarn build` to build the project.
+
+It will create a `dist` directory with all versions inside `pages/`, e.g. `dist/pages/full/index.html` and `dist/pages/basic/index.html`.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
