@@ -163,5 +163,38 @@
             "publisher": "CKSource Holding sp. z o.o.",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.11:slate",
+        "slug": "slate",
+        "active": true,
+        "labels": {
+            "primary": "Slate Editor",
+            "secondary": "Slate Editor"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "slate",
+            "iframeRootPath": "dist/pages/full/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "0.110.2",
+            "description": "A completely customizable framework for building rich text editors.",
+            "githubStars": 30000,
+            "githubLink": "https://github.com/ianstormtaylor/slate",
+            "npmLink": "https://www.npmjs.com/package/slate",
+            "websiteLink": "https://www.slatejs.org/",
+            "components": [],
+            "licenseKey": "MIT",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/ianstormtaylor/slate/blob/main/License.md",
+            "releaseDate": "2024-10-16",
+            "originalReleaseDate": "2016-11-21",
+            "publisher": "Ian Storm Taylor",
+            "comment": null
+        }
     }
 ]
