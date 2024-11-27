@@ -111,42 +111,11 @@ mergeRegister(
         },
         COMMAND_PRIORITY_LOW,
     ),
-    // editor.registerCommand(
-    //   TOGGLE_LINK_COMMAND,
-    //   () => {
-    //     let person = prompt("Please enter your name:", "");
-    //     if (person == null || person == "") {
-    //       console.log(1);
-    //     } else {
-    //       console.log(2);
-    //     }
-    //   },
-    //   COMMAND_PRIORITY_LOW
-    // ),
     editor.registerCommand(
         TOGGLE_LINK_COMMAND,
         (payload) => {
             $toggleLink(payload)
             return true
-            // if (payload === null) {
-            //   $toggleLink(payload);
-            //   return true;
-            // } else if (typeof payload === "string") {
-            //   if (validateUrl === undefined || validateUrl(payload)) {
-            //     $toggleLink(payload, attributes);
-            //     return true;
-            //   }
-            //   return false;
-            // } else {
-            //   const { url, target, rel, title } = payload;
-            //   $toggleLink(url, {
-            //     ...attributes,
-            //     rel,
-            //     target,
-            //     title,
-            //   });
-            //   return true;
-            // }
         },
         COMMAND_PRIORITY_LOW,
     ),
