@@ -196,5 +196,38 @@
             "publisher": "Ian Storm Taylor",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.28:prosemirror",
+        "slug": "prosemirror",
+        "active": true,
+        "labels": {
+            "primary": "ProseMirror",
+            "secondary": "Editor Framework"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "prosemirror",
+            "iframeRootPath": "dist/pages/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "1.37.0",
+            "description": "A toolkit for building rich-text editors on the web",
+            "githubStars": 1700,
+            "githubLink": "https://github.com/prosemirror/prosemirror-view",
+            "npmLink": "https://www.npmjs.com/package/prosemirror-view",
+            "websiteLink": "https://www.prosemirror.net/",
+            "components": [],
+            "licenseKey": "MIT",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/ProseMirror/prosemirror-view/blob/master/LICENSE",
+            "releaseDate": "2024-11-22",
+            "originalReleaseDate": "2016-09-21",
+            "publisher": "Marijn Haverbeke",
+            "comment": null
+        }
     }
 ]
