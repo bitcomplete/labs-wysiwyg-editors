@@ -23,6 +23,7 @@ This Turborepo includes the following packages and apps:
 - `TipTap` - complete
 - `SlateJS` - complete
 - `ProseMirror` - complete
+- `Quill` - complete
 
 They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
 
