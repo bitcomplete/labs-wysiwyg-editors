@@ -22,6 +22,7 @@ This Turborepo includes the following packages and apps:
 - `CKEditor 5` - complete
 - `TipTap` - complete
 - `SlateJS` - complete
+- `ProseMirror` - complete
 
 They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
 
