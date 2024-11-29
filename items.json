@@ -10,7 +10,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "lexical",
-            "iframeRootPath": "index.html",
+            "iframeRootPath": "dist/index.html",
             "ranking": {
                 "amongAll": 1
             }
