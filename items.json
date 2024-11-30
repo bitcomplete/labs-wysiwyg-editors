@@ -175,7 +175,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "editorjs",
-            "iframeRootPath": "index.html",
+            "iframeRootPath": "dist/index.html",
             "ranking": {
                 "amongAll": 1
             }
