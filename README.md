@@ -21,6 +21,7 @@ This Turborepo includes the following packages and apps:
 - `TinyMCE` - complete
 - `CKEditor 5` - complete
 - `TipTap` - complete
+- `Trix` - complete
 
 They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
 
