@@ -165,6 +165,105 @@
         }
     },
     {
+        "id": "id:item:v2024.11.11:slate",
+        "slug": "slate",
+        "active": true,
+        "labels": {
+            "primary": "Slate Editor",
+            "secondary": "Slate Editor"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "slate",
+            "iframeRootPath": "dist/pages/full/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "0.110.2",
+            "description": "A completely customizable framework for building rich text editors.",
+            "githubStars": 30000,
+            "githubLink": "https://github.com/ianstormtaylor/slate",
+            "npmLink": "https://www.npmjs.com/package/slate",
+            "websiteLink": "https://www.slatejs.org/",
+            "components": [],
+            "licenseKey": "MIT",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/ianstormtaylor/slate/blob/main/License.md",
+            "releaseDate": "2024-10-16",
+            "originalReleaseDate": "2016-11-21",
+            "publisher": "Ian Storm Taylor",
+            "comment": null
+        }
+    },
+    {
+        "id": "id:item:v2024.11.28:prosemirror",
+        "slug": "prosemirror",
+        "active": true,
+        "labels": {
+            "primary": "ProseMirror",
+            "secondary": "Editor Framework"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "prosemirror",
+            "iframeRootPath": "dist/pages/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "1.37.0",
+            "description": "A toolkit for building rich-text editors on the web",
+            "githubStars": 1700,
+            "githubLink": "https://github.com/prosemirror/prosemirror-view",
+            "npmLink": "https://www.npmjs.com/package/prosemirror-view",
+            "websiteLink": "https://www.prosemirror.net/",
+            "components": [],
+            "licenseKey": "MIT",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/ProseMirror/prosemirror-view/blob/master/LICENSE",
+            "releaseDate": "2024-11-22",
+            "originalReleaseDate": "2016-09-21",
+            "publisher": "Marijn Haverbeke",
+            "comment": null
+        }
+    },
+    {
+        "id": "id:item:v2024.11.11:editorjs",
+        "slug": "editorjs",
+        "active": true,
+        "labels": {
+            "primary": "Editor.js",
+            "secondary": "Editor.js"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "editorjs",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "2.30.6",
+            "description": "A block-styled editor with clean JSON output.",
+            "githubStars": 28800,
+            "githubLink": "https://github.com/codex-team/editor.js",
+            "npmLink": "https://www.npmjs.com/package/@editorjs/editorjs",
+            "websiteLink": "https://editorjs.io/",
+            "components": [],
+            "licenseKey": "apache-2.0",
+            "licenseName": "Apache-2.0",
+            "licenseURL": "https://github.com/codex-team/editor.js/blob/next/LICENSE",
+            "releaseDate": "2024-11-08",
+            "originalReleaseDate": "2017-01-25",
+            "publisher": "CodeX",
+            "comment": null
+        }
+    },
+    {
         "id": "id:item:v2024.11.11:trix",
         "slug": "trix",
         "active": true,
