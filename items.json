@@ -262,5 +262,38 @@
             "publisher": "CodeX",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.11:trix",
+        "slug": "trix",
+        "active": true,
+        "labels": {
+            "primary": "Trix",
+            "secondary": "Trix"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "trix",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "2.1.8",
+            "description": "A rich text editor for everyday writing. Compose beautifully formatted text in your web application.",
+            "githubStars": 19100,
+            "githubLink": "https://github.com/basecamp/trix",
+            "npmLink": "https://www.npmjs.com/package/trix",
+            "websiteLink": "https://trix-editor.org/",
+            "components": [],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/basecamp/trix?tab=MIT-1-ov-file#readme",
+            "releaseDate": "2024-10-30",
+            "originalReleaseDate": "2015-10-22",
+            "publisher": "Basecamp",
+            "comment": null
+        }
     }
 ]
