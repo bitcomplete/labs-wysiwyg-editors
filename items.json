@@ -229,5 +229,38 @@
             "publisher": "Marijn Haverbeke",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.11:editorjs",
+        "slug": "editorjs",
+        "active": true,
+        "labels": {
+            "primary": "Editor.js",
+            "secondary": "Editor.js"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "editorjs",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "2.30.6",
+            "description": "A block-styled editor with clean JSON output.",
+            "githubStars": 28800,
+            "githubLink": "https://github.com/codex-team/editor.js",
+            "npmLink": "https://www.npmjs.com/package/@editorjs/editorjs",
+            "websiteLink": "https://editorjs.io/",
+            "components": [],
+            "licenseKey": "apache-2.0",
+            "licenseName": "Apache-2.0",
+            "licenseURL": "https://github.com/codex-team/editor.js/blob/next/LICENSE",
+            "releaseDate": "2024-11-08",
+            "originalReleaseDate": "2017-01-25",
+            "publisher": "CodeX",
+            "comment": null
+        }
     }
 ]
