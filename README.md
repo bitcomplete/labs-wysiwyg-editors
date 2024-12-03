@@ -21,6 +21,8 @@ This Turborepo includes the following packages and apps:
 - `TinyMCE` - complete
 - `CKEditor 5` - complete
 - `TipTap` - complete
+- `Trix` - complete
+- `Editor.js` - complete
 - `SlateJS` - complete
 - `ProseMirror` - complete
 - `Quill` - complete

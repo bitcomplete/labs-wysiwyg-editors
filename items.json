@@ -231,36 +231,102 @@
         }
     },
     {
-        "id": "id:item:v2024.11.29:quill",
-        "slug": "quill",
+        "id": "id:item:v2024.11.11:editorjs",
+        "slug": "editorjs",
         "active": true,
         "labels": {
-            "primary": "Quill Editor",
-            "secondary": "Quill Editor"
+            "primary": "Editor.js",
+            "secondary": "Editor.js"
         },
         "tags": [],
         "attributes": {
-            "directorySlug": "quill",
+            "directorySlug": "editorjs",
             "iframeRootPath": "dist/index.html",
             "ranking": {
                 "amongAll": 1
             }
         },
         "properties": {
-            "version": "2.0.2",
-            "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility",
-            "githubStars": 43900,
-            "githubLink": "https://github.com/slab/quill",
-            "npmLink": "https://www.npmjs.com/package/quill",
-            "websiteLink": "https://quilljs.com",
+            "version": "2.30.6",
+            "description": "A block-styled editor with clean JSON output.",
+            "githubStars": 28800,
+            "githubLink": "https://github.com/codex-team/editor.js",
+            "npmLink": "https://www.npmjs.com/package/@editorjs/editorjs",
+            "websiteLink": "https://editorjs.io/",
             "components": [],
-            "licenseKey": "BSD 3-Clause",
-            "licenseName": "BSD 3-Clause",
-            "licenseURL": "https://github.com/slab/quill/blob/main/LICENSE",
-            "releaseDate": "2024-05-13",
-            "originalReleaseDate": "2014-05-06",
-            "publisher": "Slab",
+            "licenseKey": "apache-2.0",
+            "licenseName": "Apache-2.0",
+            "licenseURL": "https://github.com/codex-team/editor.js/blob/next/LICENSE",
+            "releaseDate": "2024-11-08",
+            "originalReleaseDate": "2017-01-25",
+            "publisher": "CodeX",
             "comment": null
         }
+    },
+    {
+        "id": "id:item:v2024.11.11:trix",
+        "slug": "trix",
+        "active": true,
+        "labels": {
+            "primary": "Trix",
+            "secondary": "Trix"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "trix",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "2.1.8",
+            "description": "A rich text editor for everyday writing. Compose beautifully formatted text in your web application.",
+            "githubStars": 19100,
+            "githubLink": "https://github.com/basecamp/trix",
+            "npmLink": "https://www.npmjs.com/package/trix",
+            "websiteLink": "https://trix-editor.org/",
+            "components": [],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "licenseURL": "https://github.com/basecamp/trix?tab=MIT-1-ov-file#readme",
+            "releaseDate": "2024-10-30",
+            "originalReleaseDate": "2015-10-22",
+            "publisher": "Basecamp",
+            "comment": null
+        }
+    },
+  {
+    "id": "id:item:v2024.11.29:quill",
+    "slug": "quill",
+    "active": true,
+    "labels": {
+      "primary": "Quill Editor",
+      "secondary": "Quill Editor"
+    },
+    "tags": [],
+    "attributes": {
+      "directorySlug": "quill",
+      "iframeRootPath": "dist/index.html",
+      "ranking": {
+        "amongAll": 1
+      }
+    },
+    "properties": {
+      "version": "2.0.2",
+      "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility",
+      "githubStars": 43900,
+      "githubLink": "https://github.com/slab/quill",
+      "npmLink": "https://www.npmjs.com/package/quill",
+      "websiteLink": "https://quilljs.com",
+      "components": [],
+      "licenseKey": "BSD 3-Clause",
+      "licenseName": "BSD 3-Clause",
+      "licenseURL": "https://github.com/slab/quill/blob/main/LICENSE",
+      "releaseDate": "2024-05-13",
+      "originalReleaseDate": "2014-05-06",
+      "publisher": "Slab",
+      "comment": null
     }
+  }
 ]
