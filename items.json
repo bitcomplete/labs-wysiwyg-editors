@@ -142,7 +142,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "ckeditor",
-            "iframeRootPath": "dist/index.html",
+            "iframeRootPath": "dist/pages/full/index.html",
             "ranking": {
                 "amongAll": 1
             }
