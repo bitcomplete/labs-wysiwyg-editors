@@ -93,7 +93,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "tiptap",
-            "iframeRootPath": "dist/index.html",
+            "iframeRootPath": "dist/pages/wiki/index.html",
             "ranking": {
                 "amongAll": 1
             }
