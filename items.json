@@ -142,7 +142,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "ckeditor",
-            "iframeRootPath": "dist/index.html",
+            "iframeRootPath": "dist/pages/full/index.html",
             "ranking": {
                 "amongAll": 1
             }
@@ -208,7 +208,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "prosemirror",
-            "iframeRootPath": "dist/pages/index.html",
+            "iframeRootPath": "dist/index.html",
             "ranking": {
                 "amongAll": 1
             }
@@ -293,6 +293,39 @@
             "releaseDate": "2024-10-30",
             "originalReleaseDate": "2015-10-22",
             "publisher": "Basecamp",
+            "comment": null
+        }
+    },
+    {
+        "id": "id:item:v2024.11.29:quill",
+        "slug": "quill",
+        "active": true,
+        "labels": {
+            "primary": "Quill Editor",
+            "secondary": "Quill Editor"
+        },
+        "tags": [],
+        "attributes": {
+            "directorySlug": "quill",
+            "iframeRootPath": "dist/index.html",
+            "ranking": {
+                "amongAll": 1
+            }
+        },
+        "properties": {
+            "version": "2.0.2",
+            "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility",
+            "githubStars": 43900,
+            "githubLink": "https://github.com/slab/quill",
+            "npmLink": "https://www.npmjs.com/package/quill",
+            "websiteLink": "https://quilljs.com",
+            "components": [],
+            "licenseKey": "BSD 3-Clause",
+            "licenseName": "BSD 3-Clause",
+            "licenseURL": "https://github.com/slab/quill/blob/main/LICENSE",
+            "releaseDate": "2024-05-13",
+            "originalReleaseDate": "2014-05-06",
+            "publisher": "Slab",
             "comment": null
         }
     }
