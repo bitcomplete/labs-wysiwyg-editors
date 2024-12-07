@@ -2091,6 +2091,11 @@
   resolved "https://registry.yarnpkg.com/@tiptap/extension-bullet-list/-/extension-bullet-list-2.10.3.tgz#0a17343aaf64679327de87785918bcdb04744edf"
   integrity sha512-PTkwJOVlHi4RR4Wrs044tKMceweXwNmWA6EoQ93hPUVtQcwQL990Es5Izp+i88twTPLuGD9dH+o9QDyH9SkWdA==
 
+"@tiptap/extension-code-block-lowlight@^2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-code-block-lowlight/-/extension-code-block-lowlight-2.10.3.tgz#35e7921a9ac23ca82c1d3d306307be7e043bec5c"
+  integrity sha512-ieRSdfDW06pmKcsh73N506/EWNJrpMrZzyuFx3YGJtfM+Os0a9hMLy2TSuNleyRsihBi5mb+zvdeqeGdaJm7Ng==
+
 "@tiptap/extension-code-block@^2.10.3":
   version "2.10.3"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-code-block/-/extension-code-block-2.10.3.tgz#5ff1b1e563c4eda44677df444c523de1e5258fa4"
@@ -2100,6 +2105,11 @@
   version "2.10.3"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-code/-/extension-code-2.10.3.tgz#b9fb04be2d51760f011ec7a060d4e2e3eefe392c"
   integrity sha512-JyLbfyY3cPctq9sVdpcRWTcoUOoq3/MnGE1eP6eBNyMTHyBPcM9TPhOkgj+xkD1zW/884jfelB+wa70RT/AMxQ==
+
+"@tiptap/extension-color@^2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-color/-/extension-color-2.10.3.tgz#97e77235dc20adc96c1034b48cfe7ce20040864d"
+  integrity sha512-FC2hPMSQ4w9UmO9kJCAdoU7gHpDbJ6MeJAmikB9EPp16dbGwFLrZm9TZ/4pv74fGfVm0lv720316ALOEgPEDjQ==
 
 "@tiptap/extension-document@^2.10.3":
   version "2.10.3"
@@ -2148,6 +2158,11 @@
   resolved "https://registry.yarnpkg.com/@tiptap/extension-horizontal-rule/-/extension-horizontal-rule-2.10.3.tgz#b2b6e47896ad12ef6747816bc11b388a53480614"
   integrity sha512-1a2IWhD00tgUNg/91RLnBvfENL7DLCui5L245+smcaLu+OXOOEpoBHawx59/M4hEpsjqvRRM79TzO9YXfopsPw==
 
+"@tiptap/extension-image@^2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-image/-/extension-image-2.10.3.tgz#88f18344bcb8878cd47504e3eb592ced5da1e32f"
+  integrity sha512-YIjAF5CwDkMe28OQ5pvnmdRgbJ9JcGMIHY1kyqNunSf2iwphK+6SWz9UEIkDFiT7AsRZySqxFSq93iK1XyTifw==
+
 "@tiptap/extension-italic@^2.10.3":
   version "2.10.3"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-italic/-/extension-italic-2.10.3.tgz#0efb940c572e47bd03e7e50a7ce745b60040771d"
@@ -2164,6 +2179,11 @@
   version "2.10.3"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-list-item/-/extension-list-item-2.10.3.tgz#a35c10a579acff63bb46a2fa9491b5f4edf00188"
   integrity sha512-9sok81gvZfSta2K1Dwrq5/HSz1jk4zHBpFqCx0oydzodGslx6X1bNxdca+eXJpXZmQIWALK7zEr4X8kg3WZsgw==
+
+"@tiptap/extension-mention@^2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-mention/-/extension-mention-2.10.3.tgz#544d257f8e5fd79ac32ca6d1b29c4447a1330d9a"
+  integrity sha512-h0+BrTS2HdjMfsuy6zkFIqmVGYL8w3jIG0gYaDHjWwwe/Lf2BDgOu3bZWcSr/3bKiJIwwzpOJrXssqta4TZ0yQ==
 
 "@tiptap/extension-ordered-list@^2.10.3":
   version "2.10.3"
@@ -2219,6 +2239,11 @@
   version "2.10.3"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-underline/-/extension-underline-2.10.3.tgz#83d392bd4d0b2344c590c19736bb89d208c413df"
   integrity sha512-VeGs0jeNiTnXddHHJEgOc/sKljZiyTEgSSuqMmsBACrr9aGFXbLTgKTvNjkZ9WzSnu7LwgJuBrwEhg8yYixUyQ==
+
+"@tiptap/extension-youtube@^2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-youtube/-/extension-youtube-2.10.3.tgz#252cd4ea74121542fdafb4e3dbf20ab302dbdba4"
+  integrity sha512-NcYpK/sI63l8cvcRYxrgOcrIj8cRz138iLlZYdfhNT2gffjuTpTNAqZSUysCNifIpZlYEMzq0pWN7VawLdR4Gg==
 
 "@tiptap/pm@^2.10.3", "@tiptap/pm@^2.9.1":
   version "2.10.3"
@@ -2282,6 +2307,11 @@
     "@tiptap/extension-text-style" "^2.10.3"
     "@tiptap/pm" "^2.10.3"
 
+"@tiptap/suggestion@^2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@tiptap/suggestion/-/suggestion-2.10.3.tgz#b8ad4516a6d074bda6e1aeeed0d8eb5df3262773"
+  integrity sha512-ReEwiPQoDTXn3RuWnj9D7Aod9dbNQz0QAoLRftWUTdbj3O2ohbvTNX6tlcfS+7x48Q+fAALiJGpp5BtctODlsA==
+
 "@types/babel__core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.5.tgz#3df15f27ba85319caa07ba08d0721889bb39c017"
@@ -2319,6 +2349,13 @@
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.6.tgz#628effeeae2064a1b4e79f78e81d87b7e5fc7b50"
   integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
+
+"@types/hast@^3.0.0":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-3.0.4.tgz#1d6b39993b82cea6ad783945b0508c25903e15aa"
+  integrity sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==
+  dependencies:
+    "@types/unist" "*"
 
 "@types/is-hotkey@^0.1.10":
   version "0.1.10"
@@ -2392,15 +2429,15 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
+"@types/unist@*", "@types/unist@^3.0.0":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-3.0.3.tgz#acaab0f919ce69cce629c2d4ed2eb4adc1b6c20c"
+  integrity sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==
+
 "@types/unist@^2", "@types/unist@^2.0.2":
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.11.tgz#11af57b127e32487774841f7a4e54eab166d03c4"
   integrity sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==
-
-"@types/unist@^3.0.0":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-3.0.3.tgz#acaab0f919ce69cce629c2d4ed2eb4adc1b6c20c"
-  integrity sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==
 
 "@types/use-sync-external-store@^0.0.6":
   version "0.0.6"
@@ -4313,6 +4350,11 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
+highlight.js@~11.10.0:
+  version "11.10.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.10.0.tgz#6e3600dc4b33d6dc23d5bd94fbf72405f5892b92"
+  integrity sha512-SYVnVFswQER+zu1laSya563s+F8VDGt7o35d4utbamowvUNLLMovFqwCLSocpZTz3MgaSRA1IbqRWZv97dtErQ==
+
 hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
@@ -4838,6 +4880,15 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lowlight@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-3.2.0.tgz#f06152e211b9caa09ff65e22e4bf6d085782f6cc"
+  integrity sha512-8Me8xHTCBYEXwcJIPcurnXTeERl3plwb4207v6KPye48kX/oaYDiwXy+OCm3M/pyAPUrkMhalKsbYPm24f/UDg==
+  dependencies:
+    "@types/hast" "^3.0.0"
+    devlop "^1.0.0"
+    highlight.js "~11.10.0"
 
 lru-cache@^10.2.0:
   version "10.4.3"

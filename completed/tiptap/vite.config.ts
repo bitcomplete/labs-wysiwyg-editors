@@ -18,6 +18,6 @@ export default defineConfig({
     },
     plugins: [react()],
     server: {
-        open: './pages/basic/index.html',
+        open: './pages/full/index.html',
     },
 })
