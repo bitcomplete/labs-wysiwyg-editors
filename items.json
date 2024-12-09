@@ -109,7 +109,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "tiny-mce",
-            "iframeRootPath": "dist/index.html",
+            "iframeRootPath": "dist/pages/full/index.html",
             "ranking": {
                 "amongAll": 1
             }
