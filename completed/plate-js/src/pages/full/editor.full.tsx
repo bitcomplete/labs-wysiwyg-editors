@@ -78,9 +78,11 @@ import { FloatingToolbar } from '@/components/plate-ui/floating-toolbar';
 import { FloatingToolbarButtons } from '@/components/plate-ui/floating-toolbar-buttons';
 import { withPlaceholders } from '@/components/plate-ui/placeholder';
 import { withDraggables } from '@/components/plate-ui/with-draggables';
+import { Variant, VariantPlugin } from '@/lib/variant-plugin'
 
 const plateEditor = createPlateEditor({
     plugins: [
+        VariantPlugin(Variant.FULL),
         AIPlugin,
         AIChatPlugin,
         // CopilotPlugin,

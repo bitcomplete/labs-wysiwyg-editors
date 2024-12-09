@@ -33,6 +33,6 @@ export default defineConfig({
     },
   },
   server: {
-    open: './pages/full/index.html',
+    open: './pages/wiki/index.html',
   },
 })
