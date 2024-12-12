@@ -26,9 +26,16 @@ import { CsvPlugin } from '@udecode/plate-csv'
 import { MarkdownPlugin } from '@udecode/plate-markdown'
 import { LinkFloatingToolbar } from '@/components/plate-ui/link-floating-toolbar.tsx'
 import { Editor } from '@/components/plate-ui/editor.tsx'
+import { Variant, VariantPlugin } from '@/lib/variant-plugin.ts'
+import { FixedToolbar } from '@/components/plate-ui/fixed-toolbar';
+import { FixedToolbarButtons } from '@/components/plate-ui/fixed-toolbar-buttons';
+import { FloatingToolbar } from '@/components/plate-ui/floating-toolbar';
+import { FloatingToolbarButtons } from '@/components/plate-ui/floating-toolbar-buttons';
+import { CommentsPopover } from '@/components/plate-ui/comments-popover';
 
 const plateEditor = createPlateEditor({
     plugins: [
+        VariantPlugin(Variant.BASIC),
         ParagraphPlugin,
         BlockquotePlugin,
         CodeBlockPlugin,
@@ -122,16 +129,16 @@ const plateEditor = createPlateEditor({
 function PlateEditor() {
     return (
         <Plate editor={plateEditor}>
-            {/*<FixedToolbar>*/}
-            {/*    <FixedToolbarButtons />*/}
-            {/*</FixedToolbar>*/}
-            {/**/}
+            <FixedToolbar>
+                <FixedToolbarButtons />
+            </FixedToolbar>
+
             <Editor />
 
-            {/*<FloatingToolbar>*/}
-            {/*    <FloatingToolbarButtons />*/}
-            {/*</FloatingToolbar>*/}
-            {/*<CommentsPopover />*/}
+            <FloatingToolbar>
+                <FloatingToolbarButtons />
+            </FloatingToolbar>
+            <CommentsPopover />
         </Plate>
     )
 }
