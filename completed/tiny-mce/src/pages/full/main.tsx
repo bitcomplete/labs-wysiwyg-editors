@@ -1,5 +1,6 @@
-import { useRef } from 'react';
+import { StrictMode, useRef } from 'react'
 import { Editor } from '@tinymce/tinymce-react';
+import { createRoot } from 'react-dom/client'
 
 export default function App() {
     const editorRef = useRef<Editor>(null);
@@ -29,3 +30,9 @@ export default function App() {
         </>
     );
 }
+
+createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+        <App />
+    </StrictMode>,
+)

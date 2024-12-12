@@ -43,7 +43,19 @@
         "tags": [],
         "attributes": {
             "directorySlug": "plate-js",
-            "iframeRootPath": "dist/pages/full/index.html",
+            "variants": [
+                {
+                    "default": true,
+                    "variantKey": "basic",
+                    "label": "Basic",
+                    "iframeRootPath": "dist/pages/basic/index.html"
+                },
+                {
+                    "variantKey": "full",
+                    "label": "Full",
+                    "iframeRootPath": "dist/pages/full/index.html"
+                }
+            ],
             "ranking": {
                 "amongAll": 2
             }
@@ -109,7 +121,24 @@
         "tags": [],
         "attributes": {
             "directorySlug": "tiny-mce",
-            "iframeRootPath": "dist/index.html",
+            "variants": [
+                {
+                    "default": true,
+                    "variantKey": "basic",
+                    "label": "Basic",
+                    "iframeRootPath": "dist/pages/basic/index.html"
+                },
+                {
+                    "variantKey": "wiki",
+                    "label": "Wiki",
+                    "iframeRootPath": "dist/pages/wiki/index.html"
+                },
+                {
+                    "variantKey": "full",
+                    "label": "Full",
+                    "iframeRootPath": "dist/pages/full/index.html"
+                }
+            ],
             "ranking": {
                 "amongAll": 1
             }
@@ -142,7 +171,24 @@
         "tags": [],
         "attributes": {
             "directorySlug": "ckeditor",
-            "iframeRootPath": "dist/pages/full/index.html",
+            "variants": [
+                {
+                    "default": true,
+                    "variantKey": "basic",
+                    "label": "Basic",
+                    "iframeRootPath": "dist/pages/basic/index.html"
+                },
+                {
+                    "variantKey": "wiki",
+                    "label": "Wiki",
+                    "iframeRootPath": "dist/pages/wiki/index.html"
+                },
+                {
+                    "variantKey": "full",
+                    "label": "Full",
+                    "iframeRootPath": "dist/pages/full/index.html"
+                }
+            ],
             "ranking": {
                 "amongAll": 1
             }
