@@ -109,7 +109,24 @@
         "tags": [],
         "attributes": {
             "directorySlug": "tiny-mce",
-            "iframeRootPath": "dist/pages/full/index.html",
+            "variants": [
+                {
+                    "default": true,
+                    "variantKey": "basic",
+                    "label": "Basic",
+                    "iframeRootPath": "dist/pages/basic/index.html"
+                },
+                {
+                    "variantKey": "wiki",
+                    "label": "Wiki",
+                    "iframeRootPath": "dist/pages/wiki/index.html"
+                },
+                {
+                    "variantKey": "full",
+                    "label": "Full",
+                    "iframeRootPath": "dist/pages/full/index.html"
+                }
+            ],
             "ranking": {
                 "amongAll": 1
             }
