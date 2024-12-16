@@ -13,7 +13,6 @@ import AlignmentTuneTool from 'editorjs-text-alignment-blocktune'
 import SimpleImage from '@editorjs/simple-image'
 import ColorPicker from 'editorjs-color-picker'
 import CodeBox from '@bomdi/codebox'
-import Comment from 'editorjs-comment'
 
 const editor = new EditorJS({
     holder: 'editorjs',
@@ -55,17 +54,6 @@ const editor = new EditorJS({
                 useDefaultTheme: 'light',
             },
         },
-        // TODO: comment tool, need to implement RemderItem
-        // comment: {
-        //     class: Comment,
-        //     inlineToolbar: true,
-
-        //     config: {
-        //         markerColor: 'grey',
-        //         activeColor: 'green',
-        //         renderBody: RenderItem,
-        //     },
-        // },
     },
     tunes: ['alignmentTune'],
 })

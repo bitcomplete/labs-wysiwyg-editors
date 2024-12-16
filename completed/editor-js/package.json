@@ -25,7 +25,6 @@
         "@editorjs/underline": "^1.2.1",
         "@sotaproject/strikethrough": "^1.0.1",
         "editorjs-color-picker": "^1.0.5",
-        "editorjs-comment": "^1.0.3",
         "editorjs-text-alignment-blocktune": "^1.0.3"
     }
 }
