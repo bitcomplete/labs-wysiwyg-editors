@@ -1,6 +1,27 @@
+import path from 'path'
 import { defineConfig } from 'vite'
+import { getHtmlFiles } from '../../utils/vite-helper'
 
-// https://vite.dev/config/
+const editorPages = getHtmlFiles('./src/pages')
+
 export default defineConfig({
-    base: './',
+    root: './src',
+    base: '',
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, './src'),
+        },
+    },
+    build: {
+        emptyOutDir: true,
+        rollupOptions: {
+            input: editorPages,
+            output: {
+                dir: 'dist',
+            },
+        },
+    },
+    server: {
+        open: './pages/full/index.html',
+    },
 })
