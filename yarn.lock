@@ -196,6 +196,11 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
+"@bomdi/codebox@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@bomdi/codebox/-/codebox-2.0.0.tgz#abddc7aa556c5a47458dd3bcdd9ab299bafb6f99"
+  integrity sha512-t1xjfur4wAWfKsoS+KkeARUVxBM43QwIMVxqEmhEhyCI7ixhFSBtda8FWZ9udk/+SRdM6gXPaxd2/yUQfEuDbA==
+
 "@ckeditor/ckeditor5-adapter-ckfinder@43.3.1":
   version "43.3.1"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-adapter-ckfinder/-/ckeditor5-adapter-ckfinder-43.3.1.tgz#1a501861886cb361614dc1fc87882a65555e189b"
@@ -837,6 +842,11 @@
     ckeditor5 "43.3.1"
     lodash-es "4.17.21"
 
+"@codexteam/icons@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@codexteam/icons/-/icons-0.3.2.tgz#b7aed0ba7b344e07953101f5476cded570d4f150"
+  integrity sha512-P1ep2fHoy0tv4wx85eic+uee5plDnZQ1Qa6gDfv7eHPkCXorMtVqJhzMb75o1izogh6G7380PqmFDXV3bW3Pig==
+
 "@codexteam/icons@^0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@codexteam/icons/-/icons-0.0.4.tgz#8b72dcd3f3a1b0d880bdceb2abebd74b46d3ae13"
@@ -846,6 +856,11 @@
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@codexteam/icons/-/icons-0.0.5.tgz#d17f39b6a0497c6439f57dd42711817a3dd3679c"
   integrity sha512-s6H2KXhLz2rgbMZSkRm8dsMJvyUNZsEjxobBEg9ztdrb1B2H3pEzY6iTwI4XUPJWJ3c3qRKwV4TrO3J5jUdoQA==
+
+"@codexteam/icons@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@codexteam/icons/-/icons-0.0.6.tgz#5553ada48dddf5940851ccc142cfe17835c36ad3"
+  integrity sha512-L7Q5PET8PjKcBT5wp7VR+FCjwCi5PUp7rd/XjsgQ0CI5FJz0DphyHGRILMuDUdCW2MQT9NHbVr4QP31vwAkS/A==
 
 "@codexteam/icons@^0.0.8":
   version "0.0.8"
@@ -870,6 +885,11 @@
   integrity sha512-SZ78Gwpkp3EUhjBIp0lSojeQ35V9acF8SubJsMeOH/vlOUE40GOnvvwWZnF05lO7bIB0dOHhhJy4N7IIAWxP2w==
   dependencies:
     "@editorjs/helpers" "^0.0.4"
+
+"@editorjs/editorjs@2.30.6":
+  version "2.30.6"
+  resolved "https://registry.yarnpkg.com/@editorjs/editorjs/-/editorjs-2.30.6.tgz#a77292da7433bc912e4beaf359b13812cab89c4d"
+  integrity sha512-6eQMc4Di3Hz9p4o+NGRgKaCeAF7eAk106m+bsDLc4eo94VGYO1M163OiGFdmanE+w503qTmXOzycWff5blEOAQ==
 
 "@editorjs/editorjs@^2.29.1", "@editorjs/editorjs@^2.30.7":
   version "2.30.7"
@@ -903,6 +923,13 @@
   dependencies:
     "@codexteam/icons" "^0.0.4"
 
+"@editorjs/marker@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@editorjs/marker/-/marker-1.4.0.tgz#c5553c54ced70d28502fb47f2dbc7d50c53fc88e"
+  integrity sha512-5ipEXfL44jTTRzgNp/p/YjMO7jT08S5z4V8qA3FFJTfdhKgQyM3mvP1zpdYKw47ZZpVWMCncvk5Nto3BxihEtg==
+  dependencies:
+    "@codexteam/icons" "^0.0.5"
+
 "@editorjs/quote@^2.7.2":
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/@editorjs/quote/-/quote-2.7.4.tgz#e5163130bc45134bc0d951fb770b0b63dd55726a"
@@ -910,6 +937,20 @@
   dependencies:
     "@codexteam/icons" "^0.3.2"
     "@editorjs/dom" "^0.0.5"
+
+"@editorjs/simple-image@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@editorjs/simple-image/-/simple-image-1.6.0.tgz#711c3900e17845331d6667cf0fe91793a5557f84"
+  integrity sha512-WvdGfQPlozwZd3PXQrJnRXk6gEYbv1U2vRupYJ6lTd3/UsLInXYUX5jSFcnGB5ZMH3bd0JDZfcb4d4Sv1/1big==
+  dependencies:
+    "@codexteam/icons" "^0.0.6"
+
+"@editorjs/table@^2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@editorjs/table/-/table-2.4.3.tgz#3bf7d2185297138864ece0ff04bc8ec699e2596f"
+  integrity sha512-TBLVFA1T6PIZRSWz0gXZUtNrFu4a59FeABM/wS0/Coc/bhOfWBRrf5/Ic5tVHaTazXEo1dYWWrVgg/jRaRnYbw==
+  dependencies:
+    "@codexteam/icons" "^0.0.6"
 
 "@editorjs/underline@^1.2.1":
   version "1.2.1"
@@ -3628,6 +3669,19 @@ eastasianwidth@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
+
+editorjs-color-picker@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/editorjs-color-picker/-/editorjs-color-picker-1.0.5.tgz#dfba9fe83ed646ad1e7a79eea04f48984717d60d"
+  integrity sha512-GZxTQ6BljBbXP71G5XZbSlD1ZSbzVpvEMi9ilPGf2dz097bvGzuVjxadzM6U4CEa1+UsKJeqdBeTSO4usaD2WA==
+  dependencies:
+    "@codexteam/icons" "0.3.2"
+    "@editorjs/editorjs" "2.30.6"
+
+editorjs-text-alignment-blocktune@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/editorjs-text-alignment-blocktune/-/editorjs-text-alignment-blocktune-1.0.3.tgz#7942fe2d3fbdbd7fcfd10fbb9b341c97ec3eb84f"
+  integrity sha512-DAJ2LJP+WjETvU4lVOJCqZ1kZkKHp0GkujkqZgza9DRv7bO46m1M/s2d5Ba5hPFdmqk1vA/ci++MQXgWD7mWYw==
 
 electron-to-chromium@^1.5.41:
   version "1.5.67"
