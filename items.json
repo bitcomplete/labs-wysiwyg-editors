@@ -308,7 +308,7 @@
         },
         "tags": [],
         "attributes": {
-            "directorySlug": "editorjs",
+            "directorySlug": "editor-js",
             "variants": [
                 {
                     "default": true,
