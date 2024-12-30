@@ -266,6 +266,9 @@
                 "amongAll": 1
             }
         },
+        "copy": {
+            "opinions": "Slate: ideal for highly customizable text editing solutions\n\nSlate is widely recognized for its ability to support projects that demand highly customized text editing capabilities. It is particularly well-suited for applications where specific design requirements are a priority.\n\nSlate provides extensive API documentation alongside numerous functional examples, aiding developers in understanding and utilizing the editor’s capabilities. The editor is highly customizable, allowing the implementation of virtually any design specification. Includes support for collaborative editing through the integration of slate-yjs, enhancing real-time multi-user editing experiences.\n\nSlate comes with minimal pre-built features, requiring developers to manually implement most of the core functionalities. The initial learning curve can be steep, particularly for less experienced developers, due to the need for custom implementation of features.\n\nWhile Slate offers robust solutions for projects that require tailor-made text editing tools, it demands a significant amount of manual coding to fully exploit its capabilities. This makes it an excellent choice for seasoned developers looking for a flexible, powerful editor, but potentially challenging for newcomers to the field."
+        },
         "properties": {
             "version": "0.110.2",
             "description": "A completely customizable framework for building rich text editors.",
@@ -298,6 +301,9 @@
             "ranking": {
                 "amongAll": 1
             }
+        },
+        "copy": {
+            "opinions": "ProseMirror: a versatile editor for advanced customization and collaboration in text editing\n\nProseMirror stands out as a powerful tool for projects that demand deep customization and advanced text editing functionality. It is designed to cater to developers who seek to implement sophisticated text handling features within their applications.\n\nProseMirror’s core library is small and generic, promoting a modular approach where developers can integrate only the needed functionalities. The editor supports collaborative editing out of the box, facilitating simultaneous multi-user interaction. It boasts an extensive and well-documented API, providing a thorough guide to harnessing the full capabilities of the tool.\n\nProseMirror is not intended as an easy, drop-in component; it requires developers to construct their own features on top of the foundational library. Although the documentation is comprehensive, its complexity can pose a barrier to new developers, making it challenging to grasp without prior experience.\n\nProseMirror is ideally suited for developers who need a highly customizable text editing platform and are capable of handling its complex setup. While its modular design and collaborative features are significant advantages, the steep learning curve associated with its detailed documentation may deter less experienced developers."
         },
         "properties": {
             "version": "1.37.0",
