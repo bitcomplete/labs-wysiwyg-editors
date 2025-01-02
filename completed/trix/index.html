@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
     <title>Trix Editor With Vanilla JS</title>
+    <style>
+      #editor-content {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <h1>Trix Editor - Vanilla JS</h1>
@@ -32,6 +37,7 @@
           </div>
         </div>
     <trix-editor input="editor-content" toolbar="editor-toolbar"></trix-editor>
+    <div id="editor-content"></div>
     <input id="editor-content" type="hidden" />
     <script type="module" src="./src/main.js"></script>
   </body>

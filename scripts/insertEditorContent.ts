@@ -1,7 +1,8 @@
-import { getHtmlFiles } from '../utils/vite-helper';
 import fs from 'fs';
+import { parse } from 'node-html-parser';
 
-console.log("INSERTING EDITOR CONTENT");
+import { getHtmlFiles } from '../utils/vite-helper';
+
 const editorName = process.cwd().split('/').pop();
 const htmlFiles = getHtmlFiles(`${process.cwd()}/src`);
 
@@ -10,12 +11,35 @@ const items = JSON.parse(fs.readFileSync(itemsPath, 'utf-8'));
 
 Object.entries(htmlFiles).forEach(([path, file]) => {
   const content = fs.readFileSync(file, 'utf8');
-  // const variantName = path.split('/').pop();
   const item = items.find((item) =>  item.attributes.directorySlug === editorName);
   const newContent = item.copy?.editorContent;
+  if (!newContent) {
+    console.error(`No editor content found for ${file}`);
+    return;
+  }
+  
+  // const variantName = path.split('/').pop();
   // const variant = item.attributes.variants.find(({ variantKey }) => variantKey === variantName);
 
-  // TODO: parse the html, perhaps with node-html-parser, overwrite the inside of #editor-content with newContent, then write file back to disk
+  let root;
+  try {
+    root = parse(content);
+  } catch (error) {
+    console.error(`Error parsing ${file} ${editorName}`, error);
+    throw error;
+  }
 
-  console.log(`TODO: modify "${file}"`, newContent);
+  const editorContent = root.querySelector('#editor-content');
+  if (!editorContent) {
+    console.error(`No editor content container found in ${file}`);
+    return;
+  }
+  editorContent.set_content(JSON.stringify(newContent, null, 2));
+
+  try {
+    fs.writeFileSync(file, root.toString());
+  } catch (error) {
+    console.error(`Error writing ${file} ${editorName}`, error);
+    throw error;
+  }
 })
