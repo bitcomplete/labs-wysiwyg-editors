@@ -2,9 +2,16 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**"]
+      "dependsOn": ["insertEditorContent", "^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*", "items.json"],
+      "outputs": ["dist/**"],
+      "cache": false
+    },
+    "insertEditorContent": {
+      "dependsOn": [],
+      "inputs": ["items.json", "**/index.html"],
+      "outputs": ["**/index.html"],
+      "cache": false
     },
     "lint": {},
     "dev": {
