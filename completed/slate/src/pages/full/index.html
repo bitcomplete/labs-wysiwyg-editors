@@ -1,16 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <title>Slate JS Full</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="application/json" id="editor-content-json"></script>
+    <script type="application/json" id="editor-content-json">{
+  "title": "Slate: ideal for highly customizable text editing solutions",
+  "overview": "Slate is widely recognized for its ability to support projects that demand highly customized text editing capabilities. It is particularly well-suited for applications where specific design requirements are a priority.",
+  "advantages": [
+    "Slate provides extensive API documentation alongside numerous functional examples, aiding developers in understanding and utilizing the editor’s capabilities. The editor is highly customizable, allowing the implementation of virtually any design specification. Includes support for collaborative editing through the integration of slate-yjs, enhancing real-time multi-user editing experiences."
+  ],
+  "drawbacks": [
+    "Slate comes with minimal pre-built features, requiring developers to manually implement most of the core functionalities. The initial learning curve can be steep, particularly for less experienced developers, due to the need for custom implementation of features."
+  ],
+  "conclusion": "While Slate offers robust solutions for projects that require tailor-made text editing tools, it demands a significant amount of manual coding to fully exploit its capabilities. This makes it an excellent choice for seasoned developers looking for a flexible, powerful editor, but potentially challenging for newcomers to the field."
+}</script>
     <script type="module" src="./main.full.tsx"></script>
   </body>
 </html>
