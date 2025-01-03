@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>ProseMirror</title>
   </head>
   <body>
@@ -14,6 +14,17 @@
         <p>Try it out by typing in here or see more <a href="examples">examples</a>.</p>
       </div>
     </div>
+    <script type="application/json" id="editor-content-json">{
+  "title": "ProseMirror: a versatile editor for advanced customization and collaboration in text editing",
+  "overview": "ProseMirror stands out as a powerful tool for projects that demand deep customization and advanced text editing functionality. It is designed to cater to developers who seek to implement sophisticated text handling features within their applications.",
+  "advantages": [
+    "ProseMirror’s core library is small and generic, promoting a modular approach where developers can integrate only the needed functionalities. The editor supports collaborative editing out of the box, facilitating simultaneous multi-user interaction. It boasts an extensive and well-documented API, providing a thorough guide to harnessing the full capabilities of the tool."
+  ],
+  "drawbacks": [
+    "ProseMirror is not intended as an easy, drop-in component; it requires developers to construct their own features on top of the foundational library. Although the documentation is comprehensive, its complexity can pose a barrier to new developers, making it challenging to grasp without prior experience."
+  ],
+  "conclusion": "ProseMirror is ideally suited for developers who need a highly customizable text editing platform and are capable of handling its complex setup. While its modular design and collaborative features are significant advantages, the steep learning curve associated with its detailed documentation may deter less experienced developers."
+}</script>
     <script type="module" src="./src/prosemirror.js"></script>
     <script type="module" src="./src/main.js"></script>
   </body>
