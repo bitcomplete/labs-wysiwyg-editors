@@ -1,6 +1,7 @@
 import { StrictMode, useRef } from 'react'
 import { Editor } from '@tinymce/tinymce-react'
 import { createRoot } from 'react-dom/client'
+import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml'
 
 export default function App() {
     const editorRef = useRef<Editor>(null)
@@ -10,7 +11,9 @@ export default function App() {
             <Editor
                 apiKey="2irvdgkv2qh7wlkymza35kf8pvw7wzwikexz0t9j479b3bss"
                 // onInit={}
-                initialValue="<p>This is the initial content of the editor.</p>"
+                initialValue={
+                    parseContentToHTML() + '<p>This is the initial content of the editor.</p>'
+                }
                 ref={editorRef}
                 init={{
                     height: 500,

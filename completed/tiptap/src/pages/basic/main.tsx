@@ -18,6 +18,7 @@ import Link from '@tiptap/extension-link'
 import Blockquote from '@tiptap/extension-blockquote'
 import CodeBlock from '@tiptap/extension-code-block'
 import { useCallback } from 'react'
+import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml'
 
 const extensions = [
     Document,
@@ -77,8 +78,9 @@ const content = `
 const App = () => {
     const editor = useEditor({
         extensions: extensions,
-        content: content,
+        content: `${parseContentToHTML()}${content}`,
     })
+
     if (!editor) {
         return null
     }
