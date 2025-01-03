@@ -16,7 +16,6 @@
             }
         },
         "copy": {
-            "opinions": "Drawbacks:\n.",
             "editorContent": {
                 "title": "Lexical: A Tailored Solution with Room for Growth",
                 "overview": "Lexical is a strong choice for those seeking a customizable and scalable editor tailored to specific design systems. However, it may require additional effort to build out certain features.",
