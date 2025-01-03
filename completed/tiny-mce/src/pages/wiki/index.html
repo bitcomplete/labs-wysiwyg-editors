@@ -5,15 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Tiny MCE Editor - Wiki</title>
-    <style>
-      #editor-content {
-        display: none;
-      }
-    </style>
   </head>
   <body>
     <div id="root"></div>
-    <div id="editor-content">{
+    <script type="application/json" id="editor-content-json">{
   "title": "TinyMCE: A Flexible Yet Challenging Rich Text Editor for Diverse Needs",
   "overview": "TinyMCE is a versatile and widely recognized rich text editor, valued for its extensive functionality and adaptability. With a long history and broad compatibility with modern frameworks, it caters to a wide range of use cases, from basic text editing to advanced real-time collaboration. However, while its flexibility and features are notable, users often encounter challenges in customization and consistency.",
   "advantages": [
@@ -32,7 +27,7 @@
     "Configuration options are not straightforward, highlighting the need for more intuitive setup guidance."
   ],
   "conclusion": "TinyMCE is a robust tool that excels in flexibility and feature richness, making it suitable for diverse applications and frameworks. While its modularity and plugin ecosystem are major strengths, the challenges associated with customization and achieving a consistent design may require significant investment of time and resources. Addressing these areas could enhance its appeal and usability for a broader audience."
-}</div>
+}</script>
     <script type="module" src="./main.tsx"></script>
   </body>
 </html>
