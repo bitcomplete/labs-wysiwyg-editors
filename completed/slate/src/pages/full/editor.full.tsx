@@ -51,7 +51,6 @@ const RichTextExample = () => {
                 spellCheck
                 disableDefaultStyles
                 className="editor-textbox"
-                autoFocus
                 onKeyDown={event => {
                     for (const hotkey in HOTKEYS) {
                         if (isHotkey(hotkey, event as any)) {
