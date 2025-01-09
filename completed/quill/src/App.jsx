@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Editor from './Editor';
-import Quill from 'quill'
 
-const Delta = Quill.import('delta');
+import { parseContentToQuill } from '../../../scripts/parseContentToQuill';
 
 const App = () => {
     const [range, setRange] = useState();
@@ -12,23 +11,17 @@ const App = () => {
     // Use a ref to access the quill instance directly
     const quillRef = useRef();
 
+    const value = parseContentToQuill();
     return (
         <div>
             <Editor
                 ref={quillRef}
                 readOnly={readOnly}
-                defaultValue={new Delta()
-                    .insert('Hello')
-                    .insert('\n', { header: 1 })
-                    .insert('Some ')
-                    .insert('initial', { bold: true })
-                    .insert(' ')
-                    .insert('content', { underline: true })
-                    .insert('\n')}
+                defaultValue={value}
                 onSelectionChange={setRange}
                 onTextChange={setLastChange}
             />
-            <div class="controls">
+            <div className="controls">
                 <label>
                     Read Only:{' '}
                     <input
