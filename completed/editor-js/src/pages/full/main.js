@@ -13,6 +13,7 @@ import AlignmentTuneTool from 'editorjs-text-alignment-blocktune'
 import SimpleImage from '@editorjs/simple-image'
 import ColorPicker from 'editorjs-color-picker'
 import CodeBox from '@bomdi/codebox'
+import { parseContentToDataList } from '../../parseContentToDataList'
 
 const editor = new EditorJS({
     holder: 'editorjs',
@@ -56,4 +57,7 @@ const editor = new EditorJS({
         },
     },
     tunes: ['alignmentTune'],
+    data: {
+        blocks: parseContentToDataList(),
+    },
 })

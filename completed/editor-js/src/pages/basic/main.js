@@ -4,6 +4,7 @@ import List from '@editorjs/list'
 import Underline from '@editorjs/underline'
 import InlineCode from '@editorjs/inline-code'
 import Strikethrough from '@sotaproject/strikethrough'
+import { parseContentToDataList } from '../../parseContentToDataList.ts'
 
 const editor = new EditorJS({
     holder: 'editorjs',
@@ -22,5 +23,8 @@ const editor = new EditorJS({
             shortcut: 'CMD+SHIFT+M',
         },
         strikethrough: Strikethrough,
+    },
+    data: {
+        blocks: parseContentToDataList(),
     },
 })
