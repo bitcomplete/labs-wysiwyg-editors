@@ -27,11 +27,12 @@ import { MarkdownPlugin } from '@udecode/plate-markdown'
 import { LinkFloatingToolbar } from '@/components/plate-ui/link-floating-toolbar.tsx'
 import { Editor } from '@/components/plate-ui/editor.tsx'
 import { Variant, VariantPlugin } from '@/lib/variant-plugin.ts'
-import { FixedToolbar } from '@/components/plate-ui/fixed-toolbar';
-import { FixedToolbarButtons } from '@/components/plate-ui/fixed-toolbar-buttons';
-import { FloatingToolbar } from '@/components/plate-ui/floating-toolbar';
-import { FloatingToolbarButtons } from '@/components/plate-ui/floating-toolbar-buttons';
-import { CommentsPopover } from '@/components/plate-ui/comments-popover';
+import { FixedToolbar } from '@/components/plate-ui/fixed-toolbar'
+import { FixedToolbarButtons } from '@/components/plate-ui/fixed-toolbar-buttons'
+import { FloatingToolbar } from '@/components/plate-ui/floating-toolbar'
+import { FloatingToolbarButtons } from '@/components/plate-ui/floating-toolbar-buttons'
+import { CommentsPopover } from '@/components/plate-ui/comments-popover'
+import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml.ts'
 
 const plateEditor = createPlateEditor({
     plugins: [
@@ -125,6 +126,12 @@ const plateEditor = createPlateEditor({
         },
     ],
 })
+plateEditor.children = [
+    ...(plateEditor.api.html.deserialize({
+        element: parseContentToHTML(),
+    }) as any),
+    ...plateEditor.children,
+]
 
 function PlateEditor() {
     return (

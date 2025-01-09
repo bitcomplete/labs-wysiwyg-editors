@@ -38,6 +38,7 @@ import ts from 'highlight.js/lib/languages/typescript'
 import html from 'highlight.js/lib/languages/xml'
 // load all languages with "all" or common languages with "common"
 import { all, createLowlight } from 'lowlight'
+import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml.ts'
 
 // create a lowlight instance with all languages loaded
 const lowlight = createLowlight(all)
@@ -127,7 +128,7 @@ const content = `
   <blockquote>
     Wow, that’s amazing. Good work, boy! 👏 <span data-type="mention" data-id="Jennifer Grey">
     <br />
-    ��� Mom
+    — Mom
   </blockquote>
   <table>
     <tbody>
@@ -152,7 +153,7 @@ const content = `
 const App = () => {
     const editor = useEditor({
         extensions: extensions,
-        content: content,
+        content: `${parseContentToHTML()}${content}`,
     })
     if (!editor) {
         return null

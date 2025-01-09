@@ -10,6 +10,7 @@ import Strikethrough from '@sotaproject/strikethrough'
 import Marker from '@editorjs/marker'
 import Table from '@editorjs/table'
 import AlignmentTuneTool from 'editorjs-text-alignment-blocktune'
+import { parseContentToDataList } from '../../parseContentToDataList'
 
 const editor = new EditorJS({
     holder: 'editorjs',
@@ -41,4 +42,7 @@ const editor = new EditorJS({
         table: Table,
     },
     tunes: ['alignmentTune'],
+    data: {
+        blocks: parseContentToDataList(),
+    },
 })

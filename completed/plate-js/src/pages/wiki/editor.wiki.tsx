@@ -70,6 +70,7 @@ import { FloatingToolbarButtons } from '@/components/plate-ui/floating-toolbar-b
 import { withPlaceholders } from '@/components/plate-ui/placeholder'
 import { withDraggables } from '@/components/plate-ui/with-draggables'
 import { Variant, VariantPlugin } from '@/lib/variant-plugin.ts'
+import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml'
 
 const plateEditor = createPlateEditor({
     plugins: [
@@ -208,7 +209,12 @@ const plateEditor = createPlateEditor({
         },
     ],
 })
-
+plateEditor.children = [
+    ...(plateEditor.api.html.deserialize({
+        element: parseContentToHTML(),
+    }) as any),
+    ...plateEditor.children,
+]
 function PlateEditor() {
     return (
         <DndProvider backend={HTML5Backend}>
