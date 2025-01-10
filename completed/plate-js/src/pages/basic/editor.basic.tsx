@@ -1,6 +1,6 @@
-import { createPlateEditor, Plate, ParagraphPlugin } from '@udecode/plate-common/react'
-import { BlockquotePlugin } from '@udecode/plate-block-quote/react'
-import { CodeBlockPlugin } from '@udecode/plate-code-block/react'
+import { withProps } from '@udecode/cn'
+import { createPlateEditor, ParagraphPlugin, Plate, PlateLeaf } from '@udecode/plate-common/react'
+import { CodeBlockPlugin, CodeLinePlugin, CodeSyntaxPlugin } from '@udecode/plate-code-block/react'
 import { HeadingPlugin } from '@udecode/plate-heading/react'
 import { HorizontalRulePlugin } from '@udecode/plate-horizontal-rule/react'
 import { LinkPlugin } from '@udecode/plate-link/react'
@@ -31,8 +31,16 @@ import { FixedToolbar } from '@/components/plate-ui/fixed-toolbar'
 import { FixedToolbarButtons } from '@/components/plate-ui/fixed-toolbar-buttons'
 import { FloatingToolbar } from '@/components/plate-ui/floating-toolbar'
 import { FloatingToolbarButtons } from '@/components/plate-ui/floating-toolbar-buttons'
-import { CommentsPopover } from '@/components/plate-ui/comments-popover'
-import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml.ts'
+import { withPlaceholders } from '@/components/plate-ui/placeholder'
+import { withDraggables } from '@/components/plate-ui/with-draggables'
+import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml'
+import { ParagraphElement } from '@/components/plate-ui/paragraph-element'
+import { HTML5Backend } from 'react-dnd-html5-backend'
+import { DndProvider } from 'react-dnd'
+import { CodeLineElement } from '@/components/plate-ui/code-line-element'
+import { BlockquotePlugin } from '@udecode/plate-block-quote/react'
+import { CodeSyntaxLeaf } from '@/components/plate-ui/code-syntax-leaf'
+import { CodeLeaf } from '@/components/plate-ui/code-leaf'
 
 const plateEditor = createPlateEditor({
     plugins: [
@@ -118,6 +126,20 @@ const plateEditor = createPlateEditor({
         CsvPlugin,
         MarkdownPlugin,
     ],
+    override: {
+        components: withDraggables(
+            withPlaceholders({
+                [ParagraphPlugin.key]: ParagraphElement,
+                [BoldPlugin.key]: withProps(PlateLeaf, { as: 'strong' }),
+                [CodeLinePlugin.key]: CodeLineElement,
+                [CodeSyntaxPlugin.key]: CodeSyntaxLeaf,
+                [ItalicPlugin.key]: withProps(PlateLeaf, { as: 'em' }),
+                [StrikethroughPlugin.key]: withProps(PlateLeaf, { as: 's' }),
+                [UnderlinePlugin.key]: withProps(PlateLeaf, { as: 'u' }),
+                [CodePlugin.key]: CodeLeaf,
+            }),
+        ),
+    },
     value: [
         {
             id: '1',
@@ -135,18 +157,19 @@ plateEditor.children = [
 
 function PlateEditor() {
     return (
-        <Plate editor={plateEditor}>
-            <FixedToolbar>
-                <FixedToolbarButtons />
-            </FixedToolbar>
+        <DndProvider backend={HTML5Backend}>
+            <Plate editor={plateEditor}>
+                <FixedToolbar>
+                    <FixedToolbarButtons />
+                </FixedToolbar>
 
-            <Editor />
+                <Editor />
 
-            <FloatingToolbar>
-                <FloatingToolbarButtons />
-            </FloatingToolbar>
-            <CommentsPopover />
-        </Plate>
+                <FloatingToolbar>
+                    <FloatingToolbarButtons />
+                </FloatingToolbar>
+            </Plate>
+        </DndProvider>
     )
 }
 
