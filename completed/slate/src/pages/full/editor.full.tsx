@@ -1,16 +1,11 @@
 import React, { useCallback, useMemo } from 'react'
 import isHotkey from 'is-hotkey'
 import { Editable, withReact, useSlate, Slate } from 'slate-react'
-import {
-    Editor,
-    Transforms,
-    createEditor,
-    Descendant,
-    Element as SlateElement,
-} from 'slate'
+import { Editor, Transforms, createEditor, Descendant, Element as SlateElement } from 'slate'
 import { withHistory } from 'slate-history'
 
 import { Button, Icon, Toolbar } from '../../components'
+import { parseContentToValueList } from '../../parseContentToValueList'
 
 const HOTKEYS = {
     'mod+b': 'bold',
@@ -23,12 +18,12 @@ const LIST_TYPES = ['numbered-list', 'bulleted-list']
 const TEXT_ALIGN_TYPES = ['left', 'center', 'right', 'justify']
 
 const RichTextExample = () => {
-    const renderElement = useCallback(props => <Element {...props} />, [])
-    const renderLeaf = useCallback(props => <Leaf {...props} />, [])
+    const renderElement = useCallback((props) => <Element {...props} />, [])
+    const renderLeaf = useCallback((props) => <Leaf {...props} />, [])
     const editor = useMemo(() => withHistory(withReact(createEditor())), [])
 
     return (
-        <Slate editor={editor} initialValue={initialValue}>
+        <Slate editor={editor} initialValue={[...parseContentToValueList(), ...initialValue]}>
             <Toolbar>
                 <MarkButton format="bold" icon="format_bold" />
                 <MarkButton format="italic" icon="format_italic" />
@@ -51,7 +46,7 @@ const RichTextExample = () => {
                 spellCheck
                 disableDefaultStyles
                 className="editor-textbox"
-                onKeyDown={event => {
+                onKeyDown={(event) => {
                     for (const hotkey in HOTKEYS) {
                         if (isHotkey(hotkey, event as any)) {
                             event.preventDefault()
@@ -69,12 +64,12 @@ const toggleBlock = (editor, format) => {
     const isActive = isBlockActive(
         editor,
         format,
-        TEXT_ALIGN_TYPES.includes(format) ? 'align' : 'type'
+        TEXT_ALIGN_TYPES.includes(format) ? 'align' : 'type',
     )
     const isList = LIST_TYPES.includes(format)
 
     Transforms.unwrapNodes(editor, {
-        match: n =>
+        match: (n) =>
             !Editor.isEditor(n) &&
             SlateElement.isElement(n) &&
             LIST_TYPES.includes(n.type) &&
@@ -116,11 +111,9 @@ const isBlockActive = (editor, format, blockType = 'type') => {
     const [match] = Array.from(
         Editor.nodes(editor, {
             at: Editor.unhangRange(editor, selection),
-            match: n =>
-                !Editor.isEditor(n) &&
-                SlateElement.isElement(n) &&
-                n[blockType] === format,
-        })
+            match: (n) =>
+                !Editor.isEditor(n) && SlateElement.isElement(n) && n[blockType] === format,
+        }),
     )
 
     return !!match
@@ -206,9 +199,9 @@ const BlockButton = ({ format, icon }) => {
             active={isBlockActive(
                 editor,
                 format,
-                TEXT_ALIGN_TYPES.includes(format) ? 'align' : 'type'
+                TEXT_ALIGN_TYPES.includes(format) ? 'align' : 'type',
             )}
-            onMouseDown={event => {
+            onMouseDown={(event) => {
                 event.preventDefault()
                 toggleBlock(editor, format)
             }}
@@ -223,7 +216,7 @@ const MarkButton = ({ format, icon }) => {
     return (
         <Button
             active={isMarkActive(editor, format)}
-            onMouseDown={event => {
+            onMouseDown={(event) => {
                 event.preventDefault()
                 toggleMark(editor, format)
             }}
@@ -232,7 +225,6 @@ const MarkButton = ({ format, icon }) => {
         </Button>
     )
 }
-
 const initialValue: Descendant[] = [
     {
         type: 'paragraph',

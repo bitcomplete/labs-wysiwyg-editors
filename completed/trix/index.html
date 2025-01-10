@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="./src/style.css" >
-    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
     <title>Trix Editor With Vanilla JS</title>
   </head>
-  
+  <body>
     <h1>Trix Editor - Vanilla JS</h1>
-    
+    <trix-toolbar id="editor-toolbar">
         <button type="button" data-trix-attribute="bold" title="Bold" tabindex="-1">Bold</button>
         <button type="button" data-trix-attribute="italic" title="Italic" tabindex="-1">Italic</button>
         <button type="button" data-trix-action="underline" title="Underline" tabindex="-1">Underline</button>
@@ -19,7 +19,7 @@
         <button type="button" data-trix-attribute="bullet" title="Bullet List" tabindex="-1">Bullet List</button>
         <button type="button" data-trix-attribute="number" title="Numbered List" tabindex="-1">Numbered List</button>
 
-        
+        <!-- Default Trix Link Dialog -->
         <div class="trix-dialogs" data-trix-dialogs>
           <div class="trix-dialog trix-dialog--link" data-trix-dialog="href" data-trix-dialog-attribute="href">
             <div class="trix-dialog__link-fields">
@@ -32,21 +32,21 @@
           </div>
         </div>
     <trix-editor input="editor-content" toolbar="editor-toolbar"></trix-editor>
-    <input id="editor-content" type="hidden" >
+    <input id="editor-content" type="hidden" />
     <script type="module" src="./src/main.js"></script>
     <script type="application/json" id="editor-content-json">{
-  "title": "Trix: lightweight and easy to use with limited flexibility",
-  "overview": "The Trix rich text editor is a lightweight, pure JavaScript and SCSS-based solution designed for simple text editing use cases. It offers a straightforward setup process with minimal configuration required, making it an appealing choice for basic applications. However, it has limitations when it comes to customizing the user interface (UI) and extending its functionality.",
-  "advantages": [
-    "Lightweight, built with pure JavaScript and SCSS, ensuring fast performance and ease of integration.",
-    "Simple and quick setup with minimal configuration needed, making it ideal for projects requiring a fast implementation.",
-    "Offers a straightforward setup process with minimal configuration required, making it an appealing choice for basic applications."
-  ],
-  "drawbacks": [
-    "The editor offers limited flexibility when it comes to customizing the user interface or adding advanced features.",
-    "There is no native support for popular frameworks like React, Vue, or Angular, which may hinder integration with more complex applications."
-  ],
-  "conclusion": "Trix is an excellent choice for straightforward, simple text editing tasks, especially for projects that prioritize ease of setup and lightweight performance. However, its lack of flexibility and support for modern JavaScript frameworks may limit its usefulness in more complex or customizable scenarios."
-}</script>
-      
+      "title": "Trix: lightweight and easy to use with limited flexibility",
+      "overview": "The Trix rich text editor is a lightweight, pure JavaScript and SCSS-based solution designed for simple text editing use cases. It offers a straightforward setup process with minimal configuration required, making it an appealing choice for basic applications. However, it has limitations when it comes to customizing the user interface (UI) and extending its functionality.",
+      "advantages": [
+        "Lightweight, built with pure JavaScript and SCSS, ensuring fast performance and ease of integration.",
+        "Simple and quick setup with minimal configuration needed, making it ideal for projects requiring a fast implementation.",
+        "Offers a straightforward setup process with minimal configuration required, making it an appealing choice for basic applications."
+      ],
+      "drawbacks": [
+        "The editor offers limited flexibility when it comes to customizing the user interface or adding advanced features.",
+        "There is no native support for popular frameworks like React, Vue, or Angular, which may hinder integration with more complex applications."
+      ],
+      "conclusion": "Trix is an excellent choice for straightforward, simple text editing tasks, especially for projects that prioritize ease of setup and lightweight performance. However, its lack of flexibility and support for modern JavaScript frameworks may limit its usefulness in more complex or customizable scenarios."
+    }</script>
+  </body>
 </html>

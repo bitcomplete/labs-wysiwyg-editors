@@ -118,12 +118,8 @@ export function FixedToolbarButtons() {
                                 <LineHeightDropdownMenu />
                             </>
                         )}
-                        {!isVariant(editor, Variant.BASIC) && (
-                            <>
-                                <IndentListToolbarButton nodeType={ListStyleType.Disc} />
-                                <IndentListToolbarButton nodeType={ListStyleType.Decimal} />
-                            </>
-                        )}
+                        <IndentListToolbarButton nodeType={ListStyleType.Disc} />
+                        <IndentListToolbarButton nodeType={ListStyleType.Decimal} />
                         {isVariant(editor, Variant.FULL) && <IndentTodoToolbarButton />}
                         {!isVariant(editor, Variant.BASIC) && (
                             <>
