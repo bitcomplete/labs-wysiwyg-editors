@@ -22,13 +22,8 @@ const RichTextExample = () => {
     const renderLeaf = useCallback((props) => <Leaf {...props} />, [])
     const editor = useMemo(() => withHistory(withReact(createEditor())), [])
 
-    const handleChange = (value) => {
-        const content = JSON.stringify(value, null, 2)
-        console.log(content)
-    }
-
     return (
-        <Slate editor={editor} initialValue={parseContentToValueList()}>
+        <Slate editor={editor} initialValue={[...parseContentToValueList(), ...initialValue]}>
             <Toolbar>
                 <MarkButton format="bold" icon="format_bold" />
                 <MarkButton format="italic" icon="format_italic" />
@@ -230,16 +225,6 @@ const MarkButton = ({ format, icon }) => {
         </Button>
     )
 }
-const DEFAULT_CONTENT: Descendant[] = [
-    {
-        type: 'paragraph',
-        children: [
-            {
-                text: 'This is editable content.',
-            },
-        ],
-    },
-]
 const initialValue: Descendant[] = [
     {
         type: 'paragraph',
@@ -275,6 +260,5 @@ const initialValue: Descendant[] = [
         children: [{ text: 'Try it out for yourself!' }],
     },
 ]
-console.log(parseContentToValueList() as any)
 
 export default RichTextExample
