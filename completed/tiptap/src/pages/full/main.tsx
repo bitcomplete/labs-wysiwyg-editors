@@ -201,7 +201,6 @@ const App = () => {
 
     return (
         <div className="card">
-            <h1>Tiptap Full - React</h1>
             <div className="control-group">
                 <div className="button-group">
                     <button

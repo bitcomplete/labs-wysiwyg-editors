@@ -136,7 +136,6 @@ const App = () => {
     }, [editor])
     return (
         <div className="card">
-            <h1>Tiptap Wiki - React</h1>
             <div className="control-group">
                 <div className="button-group">
                     <button
