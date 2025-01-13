@@ -105,7 +105,6 @@ const App = () => {
     }, [editor])
     return (
         <div className="card">
-            <h1>Tiptap Basics - React</h1>
             <div className="control-group">
                 <div className="button-group">
                     <button

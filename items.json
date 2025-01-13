@@ -125,8 +125,8 @@
         "slug": "tiptap",
         "active": true,
         "labels": {
-            "primary": "TipTap Editor",
-            "secondary": "TipTap Editor"
+            "primary": "TipTap",
+            "secondary": "TipTap"
         },
         "tags": [],
         "attributes": {
@@ -196,8 +196,8 @@
         "slug": "tiny-mce",
         "active": true,
         "labels": {
-            "primary": "TinyMCE Editor",
-            "secondary": "TinyMCE Editor"
+            "primary": "TinyMCE",
+            "secondary": "TinyMCE"
         },
         "tags": [],
         "attributes": {
@@ -268,8 +268,8 @@
         "slug": "ckeditor",
         "active": true,
         "labels": {
-            "primary": "CKEditor 5",
-            "secondary": "CKEditor 5"
+            "primary": "CKEditor",
+            "secondary": "CKEditor"
         },
         "tags": [],
         "attributes": {
@@ -339,8 +339,8 @@
         "slug": "slate",
         "active": true,
         "labels": {
-            "primary": "Slate Editor",
-            "secondary": "Slate Editor"
+            "primary": "Slate",
+            "secondary": "Slate"
         },
         "tags": [],
         "attributes": {
@@ -549,8 +549,8 @@
         "slug": "quill",
         "active": true,
         "labels": {
-            "primary": "Quill Editor",
-            "secondary": "Quill Editor"
+            "primary": "Quill",
+            "secondary": "Quill"
         },
         "tags": [],
         "attributes": {
