@@ -117,7 +117,10 @@
             "releaseDate": "2024-10-01",
             "originalReleaseDate": "2021-07-23",
             "publisher": "Udecode",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://platejs.org/docs" }
+            }
         }
     },
     {
@@ -188,7 +191,10 @@
             "releaseDate": "2024-10-23",
             "originalReleaseDate": "2018-09-02",
             "publisher": "TipTap",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://tiptap.dev/docs/editor/getting-started/install/react" }
+            }
         }
     },
     {
@@ -260,7 +266,10 @@
             "releaseDate": "2024-11-05",
             "originalReleaseDate": "2014-05-06",
             "publisher": "Ephox Corporation DBA Tiny Technologies, Inc.",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://www.npmjs.com/package/@tinymce/tinymce-react" }
+            }
         }
     },
     {
@@ -331,7 +340,10 @@
             "releaseDate": "2024-11-06",
             "originalReleaseDate": "2016-07-08",
             "publisher": "CKSource Holding sp. z o.o.",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://ckeditor.com/docs/ckeditor5/latest/getting-started/installation/self-hosted/react/react-default-npm.html" }
+            }
         }
     },
     {
@@ -377,7 +389,10 @@
             "releaseDate": "2024-10-16",
             "originalReleaseDate": "2016-11-21",
             "publisher": "Ian Storm Taylor",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://docs.slatejs.org/libraries/slate-react" }
+            }
         }
     },
     {
@@ -423,7 +438,10 @@
             "releaseDate": "2024-11-22",
             "originalReleaseDate": "2016-09-21",
             "publisher": "Marijn Haverbeke",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://github.com/nytimes/react-prosemirror" }
+            }
         }
     },
     {
@@ -492,7 +510,10 @@
             "releaseDate": "2024-11-08",
             "originalReleaseDate": "2017-01-25",
             "publisher": "CodeX",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://www.npmjs.com/package/react-editor-js" }
+            }
         }
     },
     {
@@ -541,7 +562,10 @@
             "releaseDate": "2024-10-30",
             "originalReleaseDate": "2015-10-22",
             "publisher": "Basecamp",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://www.npmjs.com/package/react-trix" }
+            }
         }
     },
     {
@@ -591,7 +615,10 @@
             "releaseDate": "2024-05-13",
             "originalReleaseDate": "2014-05-06",
             "publisher": "Slab",
-            "comment": null
+            "comment": null,
+            "tech": {
+                "react": { "link": "https://www.npmjs.com/package/react-quill" }
+            }
         }
     }
 ]
