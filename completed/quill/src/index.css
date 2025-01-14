@@ -22,3 +22,8 @@
 .ql-editor {
   min-height: 400px;
 }
+
+.ql-toolbar,
+.ql-container {
+  background-color: #fff;
+}

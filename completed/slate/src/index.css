@@ -92,11 +92,20 @@ iframe {
 }
 
 .container {
-    padding: 50px 50px;
     background: #fff;
 }
 
 .editor-textbox {
     padding: 20px;
     border: 1px lightslategray solid;
+}
+
+.container .toolbar {
+    background-color: #fff;
+    border: 1px lightslategray solid;
+    border-bottom: none;
+}
+
+.container .toolbar > span {
+    color: #5c5c5c;
 }

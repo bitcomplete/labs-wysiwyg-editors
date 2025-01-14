@@ -12,6 +12,7 @@ u {
 }
 
 trix-editor {
+  background-color: #fff;
   margin-top: 10px;
   height: 80vh;
   text-wrap: wrap;
