@@ -1,3 +1,5 @@
+import { BITCOMPLETE_ATTRIBUTION_LINK } from "./constants";
+
 export const parseContentToQuill = () => {
     const editorContentElement = document.getElementById('editor-content-json')
     const jsonString = editorContentElement ? editorContentElement.innerHTML : ''
@@ -19,7 +21,17 @@ export const parseContentToQuill = () => {
             "attributes": {
                 "bold": true
             },
-            "insert": `${jsonObject.title}\n\n`
+            "insert": `${jsonObject.title} - by `
+        });
+        output.push({
+            "attributes": {
+                "link": BITCOMPLETE_ATTRIBUTION_LINK,
+                "target": "_blank"
+            },
+            "insert": `Bit Complete`
+        });
+        output.push({
+            "insert": `\n\n`
         });
     }
 
