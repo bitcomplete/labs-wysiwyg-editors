@@ -84,6 +84,7 @@
   }
   body {
     @apply font-sans antialiased bg-background text-foreground overscroll-none;
+    margin: 0;
   }
 
   @supports (font: -apple-system-body) and (-webkit-appearance: none) {

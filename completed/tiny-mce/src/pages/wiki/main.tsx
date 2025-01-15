@@ -1,3 +1,4 @@
+import '../../styles.css'
 import { StrictMode, useRef } from 'react'
 import { Editor } from '@tinymce/tinymce-react'
 import { createRoot } from 'react-dom/client'
