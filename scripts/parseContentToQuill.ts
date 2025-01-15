@@ -42,7 +42,7 @@ export const parseContentToQuill = () => {
         "attributes": {
             "bold": true
         },
-        "insert": `\nOverview\n`
+        "insert": `Overview\n`
     });
         output.push({
             "insert": `${jsonObject.overview}\n\n`
