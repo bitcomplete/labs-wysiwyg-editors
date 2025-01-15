@@ -595,3 +595,17 @@ trix-editor .attachment__metadata .attachment__size {
   flex-basis: 50%;
   max-width: 50%;
 }
+
+/* Check out https://github.com/basecamp/trix/issues/194#issuecomment-190246940 if you want your mind blown */
+p {
+  margin: 0 0 1em 0;
+}
+
+ul {
+  margin: 0 0 0 0;
+}
+
+li {
+  margin: 0 0 0 0;
+  padding-bottom: 1em;
+}
