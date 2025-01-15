@@ -4,7 +4,7 @@ import { parseContentToHTML } from '../../../scripts/parseContentToHtml.ts'
 const editor = document.querySelector("trix-editor");
 const hiddenInput = document.querySelector("#editor-content");
 
-hiddenInput.value = parseContentToHTML()
+hiddenInput.value = parseContentToHTML(false)
 
 editor.addEventListener("trix-change", () => {
   console.log("Editor content:", hiddenInput.value);

@@ -104,12 +104,5 @@ export const parseContentToDataList = () => {
         })
     }
 
-    blocks.push({
-        type: 'paragraph',
-        data: {
-            text: END_OF_DEVELOPER_COMMENTS,
-        },
-    })
-
     return blocks
 }

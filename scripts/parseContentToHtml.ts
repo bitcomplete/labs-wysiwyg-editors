@@ -1,6 +1,6 @@
-export const END_OF_DEVELOPER_COMMENTS = "------ End of Developer's Comments ------"
+export const END_OF_DEVELOPER_COMMENTS = "Preview more features below:"
 
-export const parseContentToHTML = () => {
+export const parseContentToHTML = (withEndOfDeveloperComments: boolean = true) => {
     const editorContentElement = document.getElementById('editor-content-json')
     const jsonString = editorContentElement ? editorContentElement.innerText : ''
 
@@ -54,7 +54,9 @@ export const parseContentToHTML = () => {
         htmlContent += `<p><b>Conclusion</b></p><p>${jsonObject.conclusion}</p>`
     }
 
-    htmlContent += `<p>${END_OF_DEVELOPER_COMMENTS}</p>`
+    if (withEndOfDeveloperComments) {
+        htmlContent += `<p><b>${END_OF_DEVELOPER_COMMENTS}</b></p>`
+    }
 
     return htmlContent
 }

@@ -71,6 +71,7 @@ import { withPlaceholders } from '@/components/plate-ui/placeholder'
 import { withDraggables } from '@/components/plate-ui/with-draggables'
 import { Variant, VariantPlugin } from '@/lib/variant-plugin.ts'
 import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml'
+import { Value } from '@udecode/plate-common'
 
 const plateEditor = createPlateEditor({
     plugins: [
@@ -201,20 +202,10 @@ const plateEditor = createPlateEditor({
             }),
         ),
     },
-    value: [
-        {
-            id: '1',
-            type: 'p',
-            children: [{ text: 'Hello, World!' }],
-        },
-    ],
+    value: [] as Value,
 })
-plateEditor.children = [
-    ...(plateEditor.api.html.deserialize({
-        element: parseContentToHTML(),
-    }) as any),
-    ...plateEditor.children,
-]
+plateEditor.children = plateEditor.api.html.deserialize({ element: parseContentToHTML(false)}) as Value
+
 function PlateEditor() {
     return (
         <DndProvider backend={HTML5Backend}>

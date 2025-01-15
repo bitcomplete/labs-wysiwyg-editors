@@ -11,10 +11,7 @@ export default function App() {
         <>
             <Editor
                 apiKey="2irvdgkv2qh7wlkymza35kf8pvw7wzwikexz0t9j479b3bss"
-                // onInit={}
-                initialValue={
-                    parseContentToHTML() + '<p>This is the initial content of the editor.</p>'
-                }
+                initialValue={parseContentToHTML(false)}
                 ref={editorRef}
                 init={{
                     height: 500,
