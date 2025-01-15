@@ -14,19 +14,6 @@ export default function prepopulatedRichText() {
 
     root.append(...parseContentToNodes())
 
-    // Create and append heading node
-    const heading = $createHeadingNode('h1')
-    heading.append($createTextNode('Welcome to the Vanilla JS Lexical Demo!'))
-    root.append(heading)
-
-    // Create and append quote node
-    const quote = $createQuoteNode()
-    quote.append(
-        $createTextNode(
-            `In case you were wondering what the text area at the bottom is – it's the debug view, showing the current state of the editor. `,
-        ),
-    )
-    root.append(quote)
 
     // Create and append paragraph node with formatted text
     const paragraph = $createParagraphNode()
@@ -41,6 +28,16 @@ export default function prepopulatedRichText() {
         $createTextNode(' formats.'),
     )
     root.append(paragraph)
+
+    // Create and append quote node
+    const quote = $createQuoteNode()
+    quote.append(
+        $createTextNode(
+            `This is a quote block.`,
+        ),
+    )
+    root.append(quote)
+
     const list = $createListNode('bullet')
     list.append(
         $createListItemNode().append(
@@ -61,13 +58,6 @@ export default function prepopulatedRichText() {
                 'https://github.com/facebook/lexical/tree/main/packages/lexical-playground',
             ).append($createTextNode('here')),
             $createTextNode('.'),
-        ),
-        $createListItemNode().append(
-            $createTextNode('Join our '),
-            $createLinkNode('https://discord.com/invite/KmG4wQnnD9').append(
-                $createTextNode('Discord Server'),
-            ),
-            $createTextNode(' and chat with the team.'),
         ),
     )
     root.append(list)
