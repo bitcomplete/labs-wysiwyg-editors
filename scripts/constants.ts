@@ -1,0 +1,1 @@
+export const BITCOMPLETE_ATTRIBUTION_LINK = 'https://www.bitcomplete.io/?ref=wysiwyg-editors-03';

@@ -1,4 +1,4 @@
-import { END_OF_DEVELOPER_COMMENTS } from '../../../scripts/parseContentToHtml'
+import { BITCOMPLETE_ATTRIBUTION_LINK } from "../../../scripts/constants"
 
 export const parseContentToDataList = () => {
     const editorContentElement = document.getElementById('editor-content-json')
@@ -33,7 +33,7 @@ export const parseContentToDataList = () => {
         blocks.push({
             type: 'paragraph',
             data: {
-                text: `<b>${jsonObject.title}</b>`,
+                text: `<b>${jsonObject.title}</b> - by <a href="${BITCOMPLETE_ATTRIBUTION_LINK}" target="_blank">Bit Complete</a>`,
             },
         })
     }

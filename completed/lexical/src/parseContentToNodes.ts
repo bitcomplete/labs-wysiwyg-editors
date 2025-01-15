@@ -1,6 +1,8 @@
-import { $createParagraphNode, $createTextNode, $getRoot } from 'lexical'
+import { $createParagraphNode, $createTextNode } from 'lexical'
 import { $createListItemNode, $createListNode } from '@lexical/list'
+import { $createLinkNode } from '@lexical/link'
 import { END_OF_DEVELOPER_COMMENTS } from '../../../scripts/parseContentToHtml'
+import { BITCOMPLETE_ATTRIBUTION_LINK } from "../../../scripts/constants"
 
 export function parseContentToNodes() {
     const editorContentElement = document.getElementById('editor-content-json')
@@ -28,6 +30,13 @@ export function parseContentToNodes() {
     if (jsonObject.title) {
         const title = $createParagraphNode()
         title.append($createTextNode(jsonObject.title).toggleFormat('bold'))
+        title.append($createTextNode(' - by '))
+        title.append($createLinkNode(BITCOMPLETE_ATTRIBUTION_LINK, {target: '_blank'}))
+        
+        const link = $createLinkNode(BITCOMPLETE_ATTRIBUTION_LINK)
+        link.append($createTextNode('Bit Complete'))
+        title.append(link)
+
         nodes.push(title)
     }
 

@@ -1,5 +1,6 @@
 import { Descendant } from 'slate'
 import { END_OF_DEVELOPER_COMMENTS } from '../../../scripts/parseContentToHtml'
+import { BITCOMPLETE_ATTRIBUTION_LINK } from '../../../scripts/constants'
 
 export const parseContentToValueList = () => {
     const editorContentElement = document.getElementById('editor-content-json')
@@ -39,6 +40,14 @@ export const parseContentToValueList = () => {
                 {
                     text: jsonObject.title,
                     bold: true,
+                },
+                {
+                    text: ' - by ',
+                },
+                {
+                    text: 'Bit Complete',
+                    link: BITCOMPLETE_ATTRIBUTION_LINK,
+                    target: '_blank',
                 },
             ],
         })

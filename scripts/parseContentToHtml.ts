@@ -1,3 +1,5 @@
+import { BITCOMPLETE_ATTRIBUTION_LINK } from "./constants"
+
 export const END_OF_DEVELOPER_COMMENTS = "Preview more features below:"
 
 export const parseContentToHTML = (withEndOfDeveloperComments: boolean = true) => {
@@ -23,7 +25,7 @@ export const parseContentToHTML = (withEndOfDeveloperComments: boolean = true) =
 
     // Title
     if (jsonObject.title) {
-        htmlContent += `<p><b>${jsonObject.title}</b></p>`
+        htmlContent += `<p><b>${jsonObject.title}</b> - by <a href="${BITCOMPLETE_ATTRIBUTION_LINK}" target="_blank">Bit Complete</a></p>`
     }
 
     // Overview
