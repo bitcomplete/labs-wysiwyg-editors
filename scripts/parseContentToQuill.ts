@@ -1,4 +1,5 @@
 import { BITCOMPLETE_ATTRIBUTION_LINK } from "./constants";
+import { END_OF_DEVELOPER_COMMENTS } from "./parseContentToHtml";
 
 export const parseContentToQuill = () => {
     const editorContentElement = document.getElementById('editor-content-json')
@@ -38,9 +39,12 @@ export const parseContentToQuill = () => {
     // Overview
     if (jsonObject.overview) {
         output.push({
-            "attributes": {
-                "bold": true
-            },
+        "attributes": {
+            "bold": true
+        },
+        "insert": `\nOverview\n`
+    });
+        output.push({
             "insert": `${jsonObject.overview}\n\n`
         });
     }
@@ -90,12 +94,15 @@ export const parseContentToQuill = () => {
             "attributes": {
                 "bold": true
             },
-            "insert": `\n${jsonObject.conclusion}\n`
+            "insert": `\nConclusion\n`
+        });
+        output.push({
+            "insert": `${jsonObject.conclusion}\n`
         });
     }
 
     output.push({
-        "insert": "\n"
+        "insert": `${END_OF_DEVELOPER_COMMENTS}\n`
     })
 
     return output;
