@@ -9,3 +9,4 @@ dist-ssr
 .idea
 server/dist
 public/dist
+completed/slate/src/pages/full/editor.full.jsx
