@@ -1,3 +1,5 @@
+import { END_OF_DEVELOPER_COMMENTS } from "./parseContentToHtml";
+
 export const parseContentToQuill = () => {
     const editorContentElement = document.getElementById('editor-content-json')
     const jsonString = editorContentElement ? editorContentElement.innerHTML : ''
@@ -89,7 +91,7 @@ export const parseContentToQuill = () => {
     }
 
     output.push({
-        "insert": "\n"
+        "insert": `${END_OF_DEVELOPER_COMMENTS}\n`
     })
 
     return output;
