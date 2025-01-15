@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #editorjs {
   background-color: #fff;
   border: 1px solid #ccc;

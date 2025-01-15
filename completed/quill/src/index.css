@@ -1,5 +1,10 @@
+body {
+  margin: 0;
+}
+
 .controls {
   display: flex;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-top: 0;
   padding: 10px;
@@ -10,6 +15,7 @@
 }
 
 .state {
+  display: none;
   margin: 10px 0;
   font-family: monospace;
 }

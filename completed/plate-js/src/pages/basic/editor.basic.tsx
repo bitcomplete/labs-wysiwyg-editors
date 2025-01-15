@@ -41,6 +41,7 @@ import { CodeLineElement } from '@/components/plate-ui/code-line-element'
 import { BlockquotePlugin } from '@udecode/plate-block-quote/react'
 import { CodeSyntaxLeaf } from '@/components/plate-ui/code-syntax-leaf'
 import { CodeLeaf } from '@/components/plate-ui/code-leaf'
+import { Value } from '@udecode/plate-common'
 
 const plateEditor = createPlateEditor({
     plugins: [
@@ -140,20 +141,9 @@ const plateEditor = createPlateEditor({
             }),
         ),
     },
-    value: [
-        {
-            id: '1',
-            type: 'p',
-            children: [{ text: 'Hello, World!' }],
-        },
-    ],
+    value: [] as Value,
 })
-plateEditor.children = [
-    ...(plateEditor.api.html.deserialize({
-        element: parseContentToHTML(),
-    }) as any),
-    ...plateEditor.children,
-]
+plateEditor.children = plateEditor.api.html.deserialize({ element: parseContentToHTML(false)}) as Value
 
 function PlateEditor() {
     return (

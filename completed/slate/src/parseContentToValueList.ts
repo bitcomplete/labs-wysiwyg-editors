@@ -139,6 +139,7 @@ export const parseContentToValueList = () => {
         children: [
             {
                 text: END_OF_DEVELOPER_COMMENTS,
+                bold: true,
             },
         ],
     })

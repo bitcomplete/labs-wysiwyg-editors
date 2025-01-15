@@ -80,7 +80,7 @@ export function parseContentToNodes() {
     }
 
     const endOfDeveloperComments = $createParagraphNode()
-    endOfDeveloperComments.append($createTextNode(END_OF_DEVELOPER_COMMENTS))
+    endOfDeveloperComments.append($createTextNode(END_OF_DEVELOPER_COMMENTS).toggleFormat('bold'))
     nodes.push(endOfDeveloperComments)
 
     return nodes

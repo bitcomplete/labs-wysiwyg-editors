@@ -14,7 +14,7 @@ const mySchema = new Schema({
     marks: schema.spec.marks,
 })
 const contentNode = document.querySelector('#content')
-const htmlString = parseContentToHTML()
+const htmlString = parseContentToHTML(false)
 const parser = new DOMParser()
 const addedContentNode = parser.parseFromString(htmlString, 'text/html').body
 const container = document.createElement('div')
