@@ -159,11 +159,11 @@ function PlateEditor() {
     return (
         <DndProvider backend={HTML5Backend}>
             <Plate editor={plateEditor}>
-                <FixedToolbar>
+                <FixedToolbar className="border border-gray-500 rounded-none border-b-0">
                     <FixedToolbarButtons />
                 </FixedToolbar>
 
-                <Editor />
+                <Editor className="border border-gray-500 rounded-none"/>
 
                 <FloatingToolbar>
                     <FloatingToolbarButtons />

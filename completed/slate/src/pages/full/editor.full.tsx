@@ -24,7 +24,7 @@ const RichTextExample = () => {
 
     return (
         <Slate editor={editor} initialValue={[...parseContentToValueList(), ...initialValue]}>
-            <Toolbar>
+            <Toolbar className="toolbar">
                 <MarkButton format="bold" icon="format_bold" />
                 <MarkButton format="italic" icon="format_italic" />
                 <MarkButton format="underline" icon="format_underlined" />

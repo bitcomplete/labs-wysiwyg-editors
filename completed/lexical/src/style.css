@@ -1,5 +1,6 @@
 .editor-wrapper {
   border: 2px solid gray;
+  background-color: #fff;
 }
 
 #lexical-editor {

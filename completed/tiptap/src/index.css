@@ -1,4 +1,8 @@
 /* Basic editor styles */
+.editor {
+  background-color: #fff;
+}
+
 .tiptap:focus {
   outline: none;
 }
