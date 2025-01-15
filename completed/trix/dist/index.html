@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="icon" type="image/svg+xml" href="./assets/vite-DcBtz0py.svg" >
     <title>Trix Editor With Vanilla JS</title>
-    <script type="module" crossorigin src="./assets/index-YesMNwuQ.js"></script>
+    <script type="module" crossorigin src="./assets/index-DqXWgnwS.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-gGJ6RD2O.css">
   </head>
-  
-    
+  <trix-toolbar id="editor-toolbar">   
         <button type="button" data-trix-attribute="bold" title="Bold" tabindex="-1">Bold</button>
         <button type="button" data-trix-attribute="italic" title="Italic" tabindex="-1">Italic</button>
         <button type="button" data-trix-action="underline" title="Underline" tabindex="-1">Underline</button>
@@ -31,6 +30,7 @@
             </div>
           </div>
         </div>
+    </trix-toolbar>
     <trix-editor input="editor-content" toolbar="editor-toolbar"></trix-editor>
     <input id="editor-content" type="hidden" >
     <script type="application/json" id="editor-content-json">{

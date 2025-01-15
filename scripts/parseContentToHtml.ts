@@ -28,7 +28,7 @@ export const parseContentToHTML = () => {
 
     // Overview
     if (jsonObject.overview) {
-        htmlContent += `<p><b>Overview</b><p>${jsonObject.overview}</p></p>`
+        htmlContent += `<p><b>Overview</b></p><p>${jsonObject.overview}</p>`
     }
 
     // Advantages

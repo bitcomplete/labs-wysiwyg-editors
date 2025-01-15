@@ -19,16 +19,19 @@ export const parseContentToQuill = () => {
             "attributes": {
                 "bold": true
             },
-            "insert": `${jsonObject.title}\n\n`
+            "insert": `${jsonObject.title}\n`
         });
     }
 
     // Overview
     if (jsonObject.overview) {
         output.push({
-            "attributes": {
-                "bold": true
-            },
+        "attributes": {
+            "bold": true
+        },
+        "insert": `\nOverview\n`
+    });
+        output.push({
             "insert": `${jsonObject.overview}\n\n`
         });
     }
@@ -78,7 +81,10 @@ export const parseContentToQuill = () => {
             "attributes": {
                 "bold": true
             },
-            "insert": `\n${jsonObject.conclusion}\n`
+            "insert": `\nConclusion\n`
+        });
+        output.push({
+            "insert": `${jsonObject.conclusion}\n`
         });
     }
 

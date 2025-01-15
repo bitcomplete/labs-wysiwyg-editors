@@ -7,8 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="./public/vite.svg" >
     <title>Trix Editor With Vanilla JS</title>
   </head>
-  
-    
+  <trix-toolbar id="editor-toolbar">   
         <button type="button" data-trix-attribute="bold" title="Bold" tabindex="-1">Bold</button>
         <button type="button" data-trix-attribute="italic" title="Italic" tabindex="-1">Italic</button>
         <button type="button" data-trix-action="underline" title="Underline" tabindex="-1">Underline</button>
@@ -30,6 +29,7 @@
             </div>
           </div>
         </div>
+    </trix-toolbar>
     <trix-editor input="editor-content" toolbar="editor-toolbar"></trix-editor>
     <input id="editor-content" type="hidden" >
     <script type="module" src="./src/main.js"></script>
