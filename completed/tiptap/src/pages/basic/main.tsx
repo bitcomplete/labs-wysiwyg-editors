@@ -107,113 +107,114 @@ const App = () => {
                     <button
                         onClick={() => editor.chain().focus().toggleBold().run()}
                         disabled={!editor.can().chain().focus().toggleBold().run()}
-                        className={editor.isActive('bold') ? 'is-active' : ''}
+                        className={editor.isActive('bold') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Bold
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleItalic().run()}
                         disabled={!editor.can().chain().focus().toggleItalic().run()}
-                        className={editor.isActive('italic') ? 'is-active' : ''}
+                        className={editor.isActive('italic') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Italic
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleStrike().run()}
                         disabled={!editor.can().chain().focus().toggleStrike().run()}
-                        className={editor.isActive('strike') ? 'is-active' : ''}
+                        className={editor.isActive('strike') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Strike
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleUnderline().run()}
                         disabled={!editor.can().chain().focus().toggleUnderline().run()}
-                        className={editor.isActive('underline') ? 'is-active' : ''}
+                        className={editor.isActive('underline') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Underline
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleCode().run()}
                         disabled={!editor.can().chain().focus().toggleCode().run()}
-                        className={editor.isActive('code') ? 'is-active' : ''}
+                        className={editor.isActive('code') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Code
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
-                        className={editor.isActive('heading', { level: 1 }) ? 'is-active' : ''}
+                        className={editor.isActive('heading', { level: 1 }) ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         H1
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
-                        className={editor.isActive('heading', { level: 2 }) ? 'is-active' : ''}
+                        className={editor.isActive('heading', { level: 2 }) ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         H2
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
-                        className={editor.isActive('heading', { level: 3 }) ? 'is-active' : ''}
+                        className={editor.isActive('heading', { level: 3 }) ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         H3
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleHeading({ level: 4 }).run()}
-                        className={editor.isActive('heading', { level: 4 }) ? 'is-active' : ''}
+                        className={editor.isActive('heading', { level: 4 }) ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         H4
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleHeading({ level: 5 }).run()}
-                        className={editor.isActive('heading', { level: 5 }) ? 'is-active' : ''}
+                        className={editor.isActive('heading', { level: 5 }) ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         H5
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleHeading({ level: 6 }).run()}
-                        className={editor.isActive('heading', { level: 6 }) ? 'is-active' : ''}
+                        className={editor.isActive('heading', { level: 6 }) ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         H6
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleBulletList().run()}
-                        className={editor.isActive('bulletList') ? 'is-active' : ''}
+                        className={editor.isActive('bulletList') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Bullet list
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleOrderedList().run()}
-                        className={editor.isActive('orderedList') ? 'is-active' : ''}
+                        className={editor.isActive('orderedList') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Ordered list
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleCodeBlock().run()}
-                        className={editor.isActive('codeBlock') ? 'is-active' : ''}
+                        className={editor.isActive('codeBlock') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Code block
                     </button>
                     <button
                         onClick={() => editor.chain().focus().toggleBlockquote().run()}
-                        className={editor.isActive('blockquote') ? 'is-active' : ''}
+                        className={editor.isActive('blockquote') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Blockquote
                     </button>{' '}
                     <button
                         onClick={setLink}
-                        className={editor.isActive('link') ? 'is-active' : ''}
+                        className={editor.isActive('link') ? 'is-active editor-control-button' : 'editor-control-button'}
                     >
                         Set link
                     </button>
                     <button
                         onClick={() => editor.chain().focus().unsetLink().run()}
                         disabled={!editor.isActive('link')}
+                        className='editor-control-button'
                     >
                         Unset link
                     </button>
                 </div>
             </div>
-            <EditorContent editor={editor} className="editor" />
+            <EditorContent editor={editor} className="editor editor-body" />
         </div>
     )
 }

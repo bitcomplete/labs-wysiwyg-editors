@@ -1,9 +1,12 @@
+@import url('../../../styles/shared-style.css');
+
 body {
   margin: 0;
 }
 
 .ProseMirror {
   position: relative;
+  padding: 0 16px !important;
 }
 
 .ProseMirror {

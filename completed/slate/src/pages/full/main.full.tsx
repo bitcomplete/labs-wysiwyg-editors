@@ -5,7 +5,7 @@ import RichTextExample from './editor.full'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <div className="container">
+        <div className="container editor-body">
             <RichTextExample />
         </div>
     </StrictMode>,

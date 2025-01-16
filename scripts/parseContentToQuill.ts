@@ -32,7 +32,7 @@ export const parseContentToQuill = () => {
             "insert": `Bit Complete`
         });
         output.push({
-            "insert": `\n\n`
+            "insert": `\n`
         });
     }
 
@@ -45,7 +45,7 @@ export const parseContentToQuill = () => {
         "insert": `Overview\n`
     });
         output.push({
-            "insert": `${jsonObject.overview}\n\n`
+            "insert": `${jsonObject.overview}\n`
         });
     }
 
@@ -74,7 +74,7 @@ export const parseContentToQuill = () => {
             "attributes": {
                 "bold": true
             },
-            "insert": "\nDrawbacks\n"
+            "insert": "Drawbacks\n"
         });
 
         jsonObject.drawbacks.forEach((drawback: string) => {
@@ -94,7 +94,7 @@ export const parseContentToQuill = () => {
             "attributes": {
                 "bold": true
             },
-            "insert": `\nConclusion\n`
+            "insert": `Conclusion\n`
         });
         output.push({
             "insert": `${jsonObject.conclusion}\n`

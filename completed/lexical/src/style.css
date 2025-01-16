@@ -1,9 +1,12 @@
+@import url('../../../styles/shared-style.css');
+
 body {
   margin: 0;
 }
 
 .editor-wrapper {
-  border: 2px solid gray;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   background-color: #fff;
 }
 
@@ -11,6 +14,7 @@ body {
   width: 100%;
   height: 80vh;
   overflow-y: auto;
+  padding: 0 16px;
 }
 
 #lexical-editor:focus {
