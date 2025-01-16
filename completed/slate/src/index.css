@@ -1,3 +1,5 @@
+@import url('../../../styles/shared-style.css');
+
 html,
 input,
 textarea {
@@ -9,10 +11,6 @@ textarea {
 body {
     margin: 0;
     background: #ddd;
-}
-
-p {
-    margin: 0;
 }
 
 pre {
@@ -108,4 +106,8 @@ iframe {
 
 .container .toolbar > span {
     color: #5c5c5c;
+}
+
+.editor-textbox {
+    padding: 0 16px;
 }

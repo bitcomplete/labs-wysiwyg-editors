@@ -47,7 +47,7 @@ const Editor = forwardRef(
             };
         }, [ref]);
 
-        return <div ref={containerRef}></div>;
+        return <div ref={containerRef} className='editor-body'></div>;
     },
 );
 

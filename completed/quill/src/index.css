@@ -1,3 +1,5 @@
+@import url('../../../styles/shared-style.css');
+
 body {
   margin: 0;
 }
@@ -27,9 +29,14 @@ body {
 
 .ql-editor {
   min-height: 400px;
+  padding: 0 16px;
 }
 
 .ql-toolbar,
 .ql-container {
   background-color: #fff;
+}
+
+p {
+  margin: 10px 0 !important;
 }

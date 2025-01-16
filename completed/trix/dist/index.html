@@ -5,33 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="icon" type="image/svg+xml" href="./assets/vite-DcBtz0py.svg" >
     <title>Trix Editor With Vanilla JS</title>
-    <script type="module" crossorigin src="./assets/index-ixOJ_hhs.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BNauOyT5.css">
+    <script type="module" crossorigin src="./assets/index-C4Bmi9bC.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C-KEwx-L.css">
   </head>
-    <trix-toolbar id="editor-toolbar">
-        <button type="button" data-trix-attribute="bold" title="Bold" tabindex="-1">Bold</button>
-        <button type="button" data-trix-attribute="italic" title="Italic" tabindex="-1">Italic</button>
-        <button type="button" data-trix-action="underline" title="Underline" tabindex="-1">Underline</button>
-        <button type="button" data-trix-attribute="strike" title="Strikethrough" tabindex="-1">Strikethrough</button>
-        <button type="button" data-trix-action="inline-code" title="Inline Code" tabindex="-1">Inline Code</button>
-        <button type="button" data-trix-attribute="href" data-trix-action="link" title="Link" tabindex="-1">Link</button>
-        <button type="button" data-trix-attribute="bullet" title="Bullet List" tabindex="-1">Bullet List</button>
-        <button type="button" data-trix-attribute="number" title="Numbered List" tabindex="-1">Numbered List</button>
-
-        
-        <div class="trix-dialogs" data-trix-dialogs>
-          <div class="trix-dialog trix-dialog--link" data-trix-dialog="href" data-trix-dialog-attribute="href">
-            <div class="trix-dialog__link-fields">
-              <input type="url" name="href" class="trix-input trix-input--dialog" placeholder="Enter url" required data-trix-input>
-              <div class="trix-button-group">
-                <input type="button" value="Link" data-trix-method="setAttribute">
-                <input type="button" value="Unlink" data-trix-method="removeAttribute">
-              </div>
-            </div>
-          </div>
-        </div>
-    </trix-toolbar>
-    <trix-editor input="editor-content" toolbar="editor-toolbar"></trix-editor>
+    <trix-editor input="editor-content" class="editor-body"></trix-editor>
     <input id="editor-content" type="hidden" >
     <script type="application/json" id="editor-content-json">{
   "title": "Trix: lightweight and easy to use with limited flexibility",

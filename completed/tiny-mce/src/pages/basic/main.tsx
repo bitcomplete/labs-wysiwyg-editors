@@ -29,7 +29,7 @@ export default function App() {
                     ],
                     toolbar: 'undo redo | bold italic | bullist numlist | help',
                     content_style:
-                        'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+                        'body { font-family:Helvetica,Arial,sans-serif; font-size:14px } a { color: #0969da }',
                 }}
             />
         </>
