@@ -128,8 +128,8 @@
         "slug": "tiptap",
         "active": true,
         "labels": {
-            "primary": "TipTap",
-            "secondary": "TipTap"
+            "primary": "Tiptap",
+            "secondary": "Tiptap"
         },
         "tags": [],
         "attributes": {
@@ -158,23 +158,23 @@
         },
         "copy": {
             "editorContent": {
-                "title": "TipTap: A flexible and extensible rich text editor with room for growth",
-                "overview": "TipTap is a modern, open-source rich text editor built on ProseMirror. It offers a modular architecture, allowing developers to integrate only the desired features while providing robust support for extensibility and customization. Its comprehensive documentation and versatile output formats make it a strong contender for projects requiring advanced text editing capabilities.",
+                "title": "Tiptap: A flexible and extensible rich text editor with room for growth",
+                "overview": "Tiptap is a modern, open-source rich text editor built on ProseMirror. It offers a modular architecture, allowing developers to integrate only the desired features while providing robust support for extensibility and customization. Its comprehensive documentation and versatile output formats make it a strong contender for projects requiring advanced text editing capabilities.",
                 "advantages": [
-                    "Flexibility: TipTap allows developers to integrate only the functionality they need, ensuring a leaner implementation.",
+                    "Flexibility: Tiptap allows developers to integrate only the functionality they need, ensuring a leaner implementation.",
                     "Extensibility: The editor is highly extensible, enabling the development of custom commands and functionalities tailored to specific use cases.",
                     "Documentation: Comprehensive documentation and examples, including integration guides for frameworks like Next.js, facilitate smooth onboarding.",
-                    "Migrating existing content to TipTap is straightforward, reducing friction in adoption.",
+                    "Migrating existing content to Tiptap is straightforward, reducing friction in adoption.",
                     "Collaboration: Built-in collaboration capabilities make it suitable for real-time multi-user applications."
                 ],
                 "drawbacks": [
                     "Implementing custom commands relies heavily on familiarity with ProseMirror, which can increase the development burden.",
-                    "TipTap's ecosystem is relatively small; for example, the Footnotes library is a recent addition, reflecting limited maturity in certain areas.",
+                    "Tiptap's ecosystem is relatively small; for example, the Footnotes library is a recent addition, reflecting limited maturity in certain areas.",
                     "Image insertion is limited to URL-based methods, restricting user flexibility in adding media.",
                     "Version 2.0 is still in beta, while version 1.0 has been deprecated, posing potential stability concerns.",
                     "There are a few unresolved issues related to mobile support, particularly for rich text features, as highlighted on GitHub."
                 ],
-                "conclusion": "TipTap stands out as a flexible and extensible rich text editor, particularly for projects requiring tailored solutions and collaborative editing. However, its smaller ecosystem, beta status of its latest version, and some limitations in features like mobile support may pose challenges for teams. Careful consideration of project requirements and a willingness to navigate its reliance on ProseMirror will ensure successful integration."
+                "conclusion": "Tiptap stands out as a flexible and extensible rich text editor, particularly for projects requiring tailored solutions and collaborative editing. However, its smaller ecosystem, beta status of its latest version, and some limitations in features like mobile support may pose challenges for teams. Careful consideration of project requirements and a willingness to navigate its reliance on ProseMirror will ensure successful integration."
             }
         },
         "properties": {
@@ -190,7 +190,7 @@
             "licenseURL": "https://github.com/ueberdosis/tiptap/blob/develop/LICENSE.md",
             "releaseDate": "2024-10-23",
             "originalReleaseDate": "2018-09-02",
-            "publisher": "TipTap",
+            "publisher": "Tiptap",
             "comment": null,
             "tech": {
                 "react": { "link": "https://tiptap.dev/docs/editor/getting-started/install/react" }
@@ -320,7 +320,7 @@
                 "drawbacks": [
                     "The documentation is detailed but can feel overly complex and difficult to navigate.",
                     "Search results for troubleshooting often lead to outdated references to older CKEditor versions with deprecated APIs.",
-                    "Customizing specific features, such as link functionality, has been described as more cumbersome compared to alternatives like TipTap.",
+                    "Customizing specific features, such as link functionality, has been described as more cumbersome compared to alternatives like Tiptap.",
                     "General customization can be challenging, potentially hindering developer efficiency."
                 ],
                 "conclusion": "CKEditor remains a powerful and flexible tool with a rich ecosystem of features and plugins. However, improving its documentation and simplifying customization processes would make it more accessible and user-friendly, particularly for developers working with modern requirements."
@@ -594,7 +594,7 @@
                     "Established and widely used for many years"
                 ],
                 "drawbacks": [
-                    "More complex API with smaller documentation compared to alternatives like TipTap",
+                    "More complex API with smaller documentation compared to alternatives like Tiptap",
                     "Includes built-in styling, making it less \"headless\" than some other editors",
                     "Migrating existing content may be a cumbersome process"
                 ],
