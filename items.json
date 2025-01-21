@@ -171,11 +171,9 @@
                 "drawbacks": [
                     "Learning Curve: Implementing custom commands relies heavily on familiarity with ProseMirror, which can increase the development burden.",
                     "Smaller Ecosystem: Fewer third-party plugins compared to more established editors. For example, the Footnotes library is a recent addition.",
-                    "Limited Media Handling: Image insertion is limited to URL-based methods, restricting user flexibility in adding media.",
-                    "Version Stability: Version 2.0 is still in beta, while version 1.0 has been deprecated, posing potential stability concerns.",
-                    "Mobile Issues: Some rich text features have unresolved mobile compatibility problems, as highlighted on GitHub."
+                    "Limited Media Handling: Image insertion is limited to URL-based methods, restricting user flexibility in adding media."
                 ],
-                "conclusion": "Tiptap stands out as a flexible and extensible rich text editor, particularly for projects requiring tailored solutions and collaborative editing. However, its smaller ecosystem, beta status of its latest version, and some mobile compatibility problems may pose challenges for teams. Careful consideration of project requirements and a willingness to navigate its reliance on ProseMirror will ensure successful integration."
+                "conclusion": "Tiptap stands out as a flexible and extensible rich text editor, particularly for projects requiring tailored solutions and collaborative editing. However, its smaller ecosystem may pose challenges for teams. Careful consideration of project requirements and a willingness to navigate its reliance on ProseMirror will ensure successful integration."
             }
         },
         "properties": {
