@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { useState, useEffect, useRef, StrictMode } from 'react'
 import { CKEditor } from '@ckeditor/ckeditor5-react'
+import getLicenseKey from '../../license-key.ts'
 
 import {
     ClassicEditor,
@@ -62,6 +63,7 @@ function App() {
     }, [])
 
     const editorConfig: EditorConfig = {
+        licenseKey: getLicenseKey(),
         toolbar: {
             items: [
                 'undo',
