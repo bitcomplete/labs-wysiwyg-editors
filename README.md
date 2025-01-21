@@ -20,7 +20,7 @@ This Turborepo includes the following packages and apps:
 - `Lexical` - complete
 - `TinyMCE` - complete
 - `CKEditor 5` - complete
-- `TipTap` - complete
+- `Tiptap` - complete
 - `Trix` - complete
 - `Editor.js` - complete
 - `SlateJS` - complete

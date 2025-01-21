@@ -87,7 +87,7 @@
         "copy": {
             "editorContent": {
                 "title": "Plate: A flexible and modern rich text editor for developers",
-                "overview": "Plate rich text editor is praised for its customizability, robust API, modern design, and performance. However, its steep learning curve, need for plugins for basic features, compatibility issues, and higher costs limit its appeal for some.",
+                "overview": "Plate is a highly customizable rich text editor with a robust API and modern design, making it a strong choice for developers building tailored solutions. However, its steep learning curve, reliance on plugins for core features, and some stability concerns across devices and frameworks have been noted.",
                 "advantages": [
                     "Customizability: Users appreciated the editor's high level of customizability, allowing developers to tailor it to specific project needs. This flexibility makes it a strong choice for diverse applications.",
                     "Robust API: Many noted that the API is well-documented and easy to work with, streamlining integration into existing systems.",
@@ -97,10 +97,10 @@
                 "drawbacks": [
                     "Learning Curve: While powerful, some users found the editor's advanced features and configuration options difficult to learn, particularly for those new to rich text editors.",
                     "Limited Out-of-the-Box Features: Users noted that several essential features are not included by default and require additional configuration or plugins.",
-                    "Compatibility Issues: Some users encountered occasional bugs or inconsistencies when integrating the editor with certain frameworks or libraries.",
-                    "Cost: For some, the licensing fees were seen as higher compared to competitors, making it less accessible for smaller projects or organizations."
+                    "Stability & Maintenance: Users reported device-specific bugs, particularly on mobile (Android), and noted that the project underwent significant refactoring, leading to broken documentation and challenges in updating integrations.",
+                    "Styled Components: Some developers expressed concerns about the dependency on styled components, which may not align with all project architectures."
                 ],
-                "conclusion": "The Plate rich text editor stands out for its customizability, robust API, and modern design, making it a solid choice for developers seeking a flexible tool for managing rich text. However, a steep learning curve, reliance on plugins for basic features, and cost concerns may limit its appeal for some users. Addressing these drawbacks could make the editor even more compelling in the market."
+                "conclusion": "Plate offers impressive flexibility, a strong API, and a modern interface, making it a great option for developers who need a customizable editor. However, its learning curve, reliance on plugins, and stability concerns on certain devices and frameworks may require extra effort to manage."
             }
         },
         "properties": {
@@ -163,18 +163,19 @@
                 "advantages": [
                     "Flexibility: Tiptap allows developers to integrate only the functionality they need, ensuring a leaner implementation.",
                     "Extensibility: The editor is highly extensible, enabling the development of custom commands and functionalities tailored to specific use cases.",
+                    "Export Options: Natively supports exporting text to plain text, HTML, and JSON, providing versatile output options for different applications.",
                     "Documentation: Comprehensive documentation and examples, including integration guides for frameworks like Next.js, facilitate smooth onboarding.",
-                    "Migrating existing content to Tiptap is straightforward, reducing friction in adoption.",
+                    "Easy Migration: Migrating existing content to Tiptap is straightforward, reducing friction in adoption.",
                     "Collaboration: Built-in collaboration capabilities make it suitable for real-time multi-user applications."
                 ],
                 "drawbacks": [
-                    "Implementing custom commands relies heavily on familiarity with ProseMirror, which can increase the development burden.",
-                    "Tiptap's ecosystem is relatively small; for example, the Footnotes library is a recent addition, reflecting limited maturity in certain areas.",
-                    "Image insertion is limited to URL-based methods, restricting user flexibility in adding media.",
-                    "Version 2.0 is still in beta, while version 1.0 has been deprecated, posing potential stability concerns.",
-                    "There are a few unresolved issues related to mobile support, particularly for rich text features, as highlighted on GitHub."
+                    "Learning Curve: Implementing custom commands relies heavily on familiarity with ProseMirror, which can increase the development burden.",
+                    "Smaller Ecosystem: Fewer third-party plugins compared to more established editors. For example, the Footnotes library is a recent addition.",
+                    "Limited Media Handling: Image insertion is limited to URL-based methods, restricting user flexibility in adding media.",
+                    "Version Stability: Version 2.0 is still in beta, while version 1.0 has been deprecated, posing potential stability concerns.",
+                    "Mobile Issues: Some rich text features have unresolved mobile compatibility problems, as highlighted on GitHub."
                 ],
-                "conclusion": "Tiptap stands out as a flexible and extensible rich text editor, particularly for projects requiring tailored solutions and collaborative editing. However, its smaller ecosystem, beta status of its latest version, and some limitations in features like mobile support may pose challenges for teams. Careful consideration of project requirements and a willingness to navigate its reliance on ProseMirror will ensure successful integration."
+                "conclusion": "Tiptap stands out as a flexible and extensible rich text editor, particularly for projects requiring tailored solutions and collaborative editing. However, its smaller ecosystem, beta status of its latest version, and some mobile compatibility problems may pose challenges for teams. Careful consideration of project requirements and a willingness to navigate its reliance on ProseMirror will ensure successful integration."
             }
         },
         "properties": {
@@ -340,7 +341,9 @@
             "publisher": "CKSource Holding sp. z o.o.",
             "comment": null,
             "tech": {
-                "react": { "link": "https://ckeditor.com/docs/ckeditor5/latest/getting-started/installation/self-hosted/react/react-default-npm.html" }
+                "react": {
+                    "link": "https://ckeditor.com/docs/ckeditor5/latest/getting-started/installation/self-hosted/react/react-default-npm.html"
+                }
             }
         }
     },
@@ -483,16 +486,16 @@
         "copy": {
             "editorContent": {
                 "title": "Editor.js: suitable for basic use but limited for customization",
-                "overview": "Editor.js provides essential functionality for creating and managing rich text content, making it a useful tool for straightforward applications. However, users seeking extensive customization or advanced features may find it less accommodating.",
+                "overview": "Editor.js provides essential functionality for creating and managing rich text content, making it a solid choice for simple applications. However, users seeking extensive customization or advanced features may find it less accommodating due to its block-based structure and limited UI flexibility.",
                 "advantages": [
-                    "Satisfies basic functionality requirements effectively.",
-                    "Straightforward to implement for simple use cases.",
+                    "Meets basic rich text editing needs effectively.",
+                    "Easy to integrate for simple use cases.",
                     "Supports a wide range of block types, including text, images, and lists.",
                     "Offers a wide range of plugins for additional functionality.",
                     "Provides a flexible API for customizing the editor."
                 ],
                 "drawbacks": [
-                    "Customizing the user interface to meet specific client requirements proved difficult and unreliable.",
+                    "UI customization for specific client needs was challenging and unreliable, for example, adjusting the block-based layout’s margins.",
                     "The lack of React-based architecture limits its compatibility and flexibility in certain development environments.",
                     "Controlling keyboard event handlers posed significant challenges, reducing ease of integration."
                 ],
@@ -541,12 +544,13 @@
                 "overview": "The Trix rich text editor is a lightweight, pure JavaScript and SCSS-based solution designed for simple text editing use cases. It offers a straightforward setup process with minimal configuration required, making it an appealing choice for basic applications. However, it has limitations when it comes to customizing the user interface (UI) and extending its functionality.",
                 "advantages": [
                     "Lightweight, built with pure JavaScript and SCSS, ensuring fast performance and ease of integration.",
-                    "Simple and quick setup with minimal configuration needed, making it ideal for projects requiring a fast implementation.",
-                    "Offers a straightforward setup process with minimal configuration required, making it an appealing choice for basic applications."
+                    "Simple and quick setup with minimal configuration needed, making it ideal for projects requiring quick implementation.",
+                    "Straightforward and intuitive design, reducing the learning curve for new users."
                 ],
                 "drawbacks": [
-                    "The editor offers limited flexibility when it comes to customizing the user interface or adding advanced features.",
-                    "There is no native support for popular frameworks like React, Vue, or Angular, which may hinder integration with more complex applications."
+                    "Limited flexibility in UI customization and extending functionality beyond its default features.",
+                    "No native support for modern frameworks like React, Vue, or Angular, making integration with complex applications more challenging.",
+                    "Trix replaces `<p>` elements with `<div>`s and adds extra `<br>` tags to preserve spacing, sometimes leading to unexpected formatting when parsing preloaded HTML."
                 ],
                 "conclusion": "Trix is an excellent choice for straightforward, simple text editing tasks, especially for projects that prioritize ease of setup and lightweight performance. However, its lack of flexibility and support for modern JavaScript frameworks may limit its usefulness in more complex or customizable scenarios."
             }
