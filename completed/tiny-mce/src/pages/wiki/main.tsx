@@ -3,6 +3,7 @@ import { StrictMode, useRef } from 'react'
 import { Editor } from '@tinymce/tinymce-react'
 import { createRoot } from 'react-dom/client'
 import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml'
+import API_KEY from '../../api-key'
 
 export default function App() {
     const editorRef = useRef<Editor>(null)
@@ -10,7 +11,7 @@ export default function App() {
     return (
         <>
             <Editor
-                apiKey="2irvdgkv2qh7wlkymza35kf8pvw7wzwikexz0t9j479b3bss"
+                apiKey={API_KEY}
                 initialValue={parseContentToHTML(false)}
                 ref={editorRef}
                 init={{

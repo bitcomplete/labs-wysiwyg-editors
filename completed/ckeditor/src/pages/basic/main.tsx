@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client'
 import { useState, useEffect, useRef, StrictMode } from 'react'
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import { parseContentToHTML } from '../../../../../scripts/parseContentToHtml.ts'
+import getLicenseKey from '../../license-key.ts'
 
 import {
     ClassicEditor,
@@ -28,8 +29,10 @@ import {
     TextTransformation,
     Underline,
 } from 'ckeditor5'
+
 import 'ckeditor5/ckeditor5.css'
 import '../../index.css'
+
 
 function App() {
     const editorContainerRef = useRef(null)
@@ -43,6 +46,7 @@ function App() {
     }, [])
 
     const editorConfig: EditorConfig = {
+        licenseKey: getLicenseKey() ,
         toolbar: {
             items: ['bold', 'italic', 'underline', '|', 'link', 'bulletedList', 'numberedList'],
             shouldNotGroupWhenFull: false,
