@@ -10,3 +10,7 @@ body {
   padding: 10px;
   overflow-y: auto;
 }
+
+.codex-editor__redactor {
+  padding-bottom: 32px !important;
+}
