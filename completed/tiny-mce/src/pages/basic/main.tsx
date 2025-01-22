@@ -26,6 +26,7 @@ export default function App() {
                         'code',
                         'help',
                         'wordcount',
+                        'autoresize',
                     ],
                     toolbar: 'undo redo | bold italic | bullist numlist | help',
                     content_style:

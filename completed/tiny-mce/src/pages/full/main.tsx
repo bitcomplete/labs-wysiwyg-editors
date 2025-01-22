@@ -35,6 +35,7 @@ export default function App() {
                         'code',
                         'help',
                         'wordcount',
+                        'autoresize',
                     ],
                     toolbar:
                         'undo redo | blocks | ' +
