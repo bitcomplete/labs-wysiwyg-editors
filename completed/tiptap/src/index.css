@@ -15,8 +15,8 @@ body {
 .tiptap {
   margin-top: 10px;
   border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  padding: 0 16px;
+  border-bottom: none;
+  padding: 0 16px 1.5rem;
 
   /* List styles */
   ul,
