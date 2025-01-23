@@ -28,6 +28,7 @@ export default function App() {
                         'table',
                         'help',
                         'wordcount',
+                        'autoresize',
                     ],
                     toolbar:
                         'undo redo | blocks | ' +
