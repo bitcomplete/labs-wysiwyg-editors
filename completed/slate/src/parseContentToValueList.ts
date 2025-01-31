@@ -45,9 +45,9 @@ export const parseContentToValueList = () => {
                     text: ' - by ',
                 },
                 {
-                    text: 'Bit Complete',
-                    link: BITCOMPLETE_ATTRIBUTION_LINK,
-                    target: '_blank',
+                    type: 'link',
+                    url: BITCOMPLETE_ATTRIBUTION_LINK,
+                    children: [{ text: 'Bit Complete' }],
                 },
             ],
         })

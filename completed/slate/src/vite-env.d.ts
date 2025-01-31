@@ -4,8 +4,23 @@ import { BaseEditor } from 'slate'
 import { ReactEditor } from 'slate-react'
 import { HistoryEditor } from 'slate-history'
 
-type CustomElement = { type: 'paragraph' | 'block-quote' ; children: CustomText[]; align?: string }
-type CustomText = { text: string; bold?: boolean; italic?: boolean; underline?: boolean; code?: boolean }
+export type LinkElement = { type: 'link'; url: string; children: Descendant[] }
+
+type CustomElement =
+    | {
+          type: 'paragraph' | 'block-quote' | 'link'
+          children: CustomText[]
+          align?: string
+      }
+    | LinkElement
+type CustomText = {
+    text: string
+    bold?: boolean
+    italic?: boolean
+    underline?: boolean
+    code?: boolean
+    url?: string
+}
 
 declare module 'slate' {
     interface CustomTypes {
