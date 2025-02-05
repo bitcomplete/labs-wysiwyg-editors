@@ -168,7 +168,6 @@ const unwrapLink = (editor) => {
 }
 
 const insertLink = (editor, url) => {
-    console.log('insertLink', editor, url)
     if (editor.selection) {
         wrapLink(editor, url)
     }
@@ -333,7 +332,6 @@ const LinkButton = ({ action }) => {
 const allowedSchemes = ['http:', 'https:', 'mailto:', 'tel:']
 
 const LinkComponent = ({ attributes, children, element }) => {
-    console.log('LinkComponent', element)
     const selected = useSelected()
 
     const safeUrl = useMemo(() => {
