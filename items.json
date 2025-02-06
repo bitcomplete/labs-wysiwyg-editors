@@ -232,7 +232,7 @@
         "copy": {
             "editorContent": {
                 "title": "TinyMCE: A Flexible Yet Challenging Rich Text Editor",
-                "overview": "TinyMCE is a versatile and widely recognized rich text editor, valued for its extensive functionality and adaptability. With a long history and broad compatibility with modern frameworks, it caters to a wide range of use cases, from basic text editing to advanced collaboration. However, users often encounter challenges in customization and consistency.",
+                "overview": "TinyMCE is a versatile and widely recognized rich text editor, valued for its extensive functionality and adaptability. With a long history and broad compatibility with modern frameworks, it caters to a wide range of use cases, from basic text editing to advanced collaboration. However, developers often need to invest more time in exploring documentation, testing configurations, and troubleshooting to achieve the desired level of customization.",
                 "advantages": [
                     "TinyMCE allows integration of only the specific functionality required, ensuring tailored implementations.",
                     "With a well-established presence in the market, it has earned a reputation for reliability.",
@@ -246,7 +246,7 @@
                     "Custom styling demands significant effort.",
                     "Modifying existing functionality like styling is complex; creating new plugins is often more efficient.",
                     "Lacks a unified and cohesive look and feel, with styles often hardcoded, limiting flexibility.",
-                    "Advanced configuration options are not straightforward."
+                    "Custom configuration options are not straightforward."
                 ],
                 "conclusion": "TinyMCE is a robust tool that excels in flexibility and feature richness, making it suitable for diverse applications and frameworks. While its modularity and plugin ecosystem are major strengths, the challenges associated with customization and achieving a consistent design may require significant investment of time and resources."
             }
@@ -307,12 +307,13 @@
         "copy": {
             "editorContent": {
                 "title": "CKEditor: a versatile editor with customization challenges",
-                "overview": "CKEditor is a robust and widely-used rich text editor that has been a staple in the industry for many years. It offers a range of features that make it a strong choice for developers and content creators alike. However, certain aspects, particularly related to customization and documentation, pose challenges for users.",
+                "overview": "CKEditor is a robust and widely-used rich text editor that has been a staple in the industry for many years. It offers a range of features that make it a strong choice for developers and content creators alike. Being the only rich text editor with drop-in asynchronous and real-time collaboration, it is a robust and a reliable choice for enterprise applications. However, certain aspects, particularly related to customization and documentation, pose challenges for users.",
                 "advantages": [
                     "CKEditor has a long-standing reputation, benefiting from years of development and refinement.",
                     "Users can tailor the editor to their needs by integrating only the necessary functionalities.",
                     "It supports content output in both HTML and Markdown formats.",
-                    "A wide variety of plugins and a headless option make it highly adaptable for different use cases."
+                    "A wide variety of plugins and a headless option make it highly adaptable for different use cases.",
+                    "CKEditor has a builder that makes it easy to generate the editor's code, so developers can quickly plug their customized editor into projects built with React, Angular, or Vue.js and start working right away."
                 ],
                 "drawbacks": [
                     "The documentation is detailed but can feel overly complex and difficult to navigate.",
@@ -423,7 +424,8 @@
                     "It boasts an extensive and well-documented API, providing a thorough guide to harnessing the full capabilities of the tool."
                 ],
                 "drawbacks": [
-                    "ProseMirror is not intended as an easy, drop-in component; it requires developers to construct their own features on top of the foundational library.", "Although the documentation is comprehensive, its complexity can pose a barrier to new developers, making it challenging to grasp without prior experience."
+                    "ProseMirror is not intended as an easy, drop-in component; it requires developers to construct their own features on top of the foundational library.",
+                    "Although the documentation is comprehensive, its complexity can pose a barrier to new developers, making it challenging to grasp without prior experience."
                 ],
                 "conclusion": "ProseMirror is ideally suited for developers who need a highly customizable text editing platform and are capable of handling its complex setup. While its modular design and collaborative features are significant advantages, the steep learning curve associated with its detailed documentation may deter less experienced developers."
             }
