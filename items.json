@@ -67,17 +67,17 @@
                     "default": true,
                     "variantKey": "basic",
                     "label": "Basic",
-                    "iframeRootPath": "dist/pages/basic/index.html"
+                    "iframeRootPath": "dist/src/pages/basic/index.html"
                 },
                 {
                     "variantKey": "wiki",
                     "label": "Wiki",
-                    "iframeRootPath": "dist/pages/wiki/index.html"
+                    "iframeRootPath": "dist/src/pages/wiki/index.html"
                 },
                 {
                     "variantKey": "full",
                     "label": "Full",
-                    "iframeRootPath": "dist/pages/full/index.html"
+                    "iframeRootPath": "dist/src/pages/full/index.html"
                 }
             ],
             "ranking": {
@@ -139,17 +139,17 @@
                     "default": true,
                     "variantKey": "basic",
                     "label": "Basic",
-                    "iframeRootPath": "dist/pages/basic/index.html"
+                    "iframeRootPath": "dist/src/pages/basic/index.html"
                 },
                 {
                     "variantKey": "wiki",
                     "label": "Wiki",
-                    "iframeRootPath": "dist/pages/wiki/index.html"
+                    "iframeRootPath": "dist/src/pages/wiki/index.html"
                 },
                 {
                     "variantKey": "full",
                     "label": "Full",
-                    "iframeRootPath": "dist/pages/full/index.html"
+                    "iframeRootPath": "dist/src/pages/full/index.html"
                 }
             ],
             "ranking": {
@@ -212,17 +212,17 @@
                     "default": true,
                     "variantKey": "basic",
                     "label": "Basic",
-                    "iframeRootPath": "dist/pages/basic/index.html"
+                    "iframeRootPath": "dist/src/pages/basic/index.html"
                 },
                 {
                     "variantKey": "wiki",
                     "label": "Wiki",
-                    "iframeRootPath": "dist/pages/wiki/index.html"
+                    "iframeRootPath": "dist/src/pages/wiki/index.html"
                 },
                 {
                     "variantKey": "full",
                     "label": "Full",
-                    "iframeRootPath": "dist/pages/full/index.html"
+                    "iframeRootPath": "dist/src/pages/full/index.html"
                 }
             ],
             "ranking": {
@@ -357,7 +357,7 @@
         "tags": [],
         "attributes": {
             "directorySlug": "slate",
-            "iframeRootPath": "dist/pages/full/index.html",
+            "iframeRootPath": "dist/src/pages/full/index.html",
             "ranking": {
                 "amongAll": 1
             }
@@ -466,17 +466,17 @@
                     "default": true,
                     "variantKey": "basic",
                     "label": "Basic",
-                    "iframeRootPath": "dist/pages/basic/index.html"
+                    "iframeRootPath": "dist/src/pages/basic/index.html"
                 },
                 {
                     "variantKey": "wiki",
                     "label": "Wiki",
-                    "iframeRootPath": "dist/pages/wiki/index.html"
+                    "iframeRootPath": "dist/src/pages/wiki/index.html"
                 },
                 {
                     "variantKey": "full",
                     "label": "Full",
-                    "iframeRootPath": "dist/pages/full/index.html"
+                    "iframeRootPath": "dist/src/pages/full/index.html"
                 }
             ],
             "ranking": {
