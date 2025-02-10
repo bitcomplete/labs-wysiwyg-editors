@@ -29,9 +29,13 @@ This Turborepo includes the following packages and apps:
 
 They are divided into 2 parent directories - `todo/` & `complete/`. As the name suggests, working examples are under `complete/`
 
+### Updating Content
+
+The `items.json` file includes static content for each editor. After updating this content, run `yarn build` to apply the changes. This will trigger the `insertEditorContent` script, which loads the updated content into each editor's iframe. See the Build section for more details.
+
 ### Build
 
-Run `yarn build` to build all monorepos under `complete/` directory
+Run `yarn build` to build all monorepos under the `complete/` directory. This process ensures that the latest content from `items.json` is included in each editor's static preloaded content.
 
 ### Development
 
