@@ -5,7 +5,6 @@ import { getHtmlFiles } from '../../utils/vite-helper'
 const editorPages = getHtmlFiles('./src/pages')
 
 export default defineConfig({
-    root: './src',
     base: '',
     resolve: {
         alias: {
@@ -22,6 +21,6 @@ export default defineConfig({
         },
     },
     server: {
-        open: './pages/full/index.html',
+        open: './src/pages/full/index.html',
     },
 })

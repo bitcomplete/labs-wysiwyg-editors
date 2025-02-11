@@ -9,7 +9,6 @@ console.debug("Pages to be built: ", editorPages);
 
 // https://vite.dev/config/
 export default defineConfig({
-  root: './src',
   base: "",
   plugins: [react()],
   resolve: {
@@ -33,6 +32,6 @@ export default defineConfig({
     },
   },
   server: {
-    open: './pages/full/index.html',
+    open: './src/pages/full/index.html',
   },
 })

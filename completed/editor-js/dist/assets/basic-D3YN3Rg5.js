@@ -1,1 +1,0 @@
-import{T as e,d as o,m as s,a as t,b as r,s as a,S as i}from"./style-BcOOV3P0.js";new e({holder:"editorjs",autofocuse:!0,tools:{list:{class:o,inlineToolbar:!0,config:{defaultStyle:"unordered"}},quote:s,code:t,underline:r,inlineCode:{class:a,shortcut:"CMD+SHIFT+M"},strikethrough:i}});
