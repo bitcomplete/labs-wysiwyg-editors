@@ -6,6 +6,9 @@ import { getHtmlFiles } from '../../utils/vite-helper'
 const editorPages = getHtmlFiles('./src/pages')
 
 export default defineConfig({
+    experimental: {
+        enableNativePlugin: true,
+    },
     base: '',
     resolve: {
         alias: {

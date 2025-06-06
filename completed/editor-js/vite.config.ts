@@ -6,6 +6,9 @@ const editorPages = getHtmlFiles('./src/pages')
 
 export default defineConfig({
     base: '',
+    experimental: {
+        enableNativePlugin: true,
+    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),

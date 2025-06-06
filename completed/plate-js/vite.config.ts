@@ -9,6 +9,7 @@ console.debug("Pages to be built: ", editorPages);
 
 // https://vite.dev/config/
 export default defineConfig({
+
   base: "",
   plugins: [react()],
   resolve: {
@@ -16,17 +17,22 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  experimental: {
+    enableNativePlugin: true,
+  },
   build: {
     emptyOutDir: true,
     rollupOptions: {
       input: editorPages,
       output: {
         dir: 'dist',
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         manualChunks: {
-            react: ['react'],
-            'react-dom': ['react-dom'],
-            'lodash': ['lodash'],
-            '@udecode/plate': ['@udecode/plate-common', '@udecode/plate-basic-marks', "@udecode/cn"],
+          react: ['react'],
+          'react-dom': ['react-dom'],
+          'lodash': ['lodash'],
+          '@udecode/plate': ['@udecode/plate-common', '@udecode/plate-basic-marks', "@udecode/cn"],
         }
       }
     },

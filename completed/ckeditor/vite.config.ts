@@ -11,6 +11,9 @@ console.debug("Pages to be built: ", editorPages);
 export default defineConfig({
     base: "",
     plugins: [react()],
+    experimental: {
+        enableNativePlugin: true,
+    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),
@@ -22,6 +25,7 @@ export default defineConfig({
             input: editorPages,
             output: {
                 dir: 'dist',
+                // @ts-ignore
                 manualChunks: {
                     react: ['react', 'react-dom'],
                     'ckeditor': ['@ckeditor/ckeditor5-react', 'ckeditor5'],
