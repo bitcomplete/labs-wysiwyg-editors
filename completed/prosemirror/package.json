@@ -26,6 +26,6 @@
     "prosemirror-view": "^1.0.0"
   },
   "devDependencies": {
-    "vite": "^6.0.1"
+    "vite": "npm:rolldown-vite@latest"
   }
 }

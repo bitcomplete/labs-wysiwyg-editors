@@ -9,6 +9,9 @@ console.debug("Pages to be built: ", editorPages);
 
 // https://vite.dev/config/
 export default defineConfig({
+  experimental: {
+    enableNativePlugin: true,
+  },
   base: "",
   plugins: [react()],
   resolve: {
@@ -22,6 +25,8 @@ export default defineConfig({
       input: editorPages,
       output: {
         dir: 'dist',
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         manualChunks: {
           react: ['react'],
           'react-dom': ['react-dom'],

@@ -16,12 +16,17 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  experimental: {
+    enableNativePlugin: true,
+  },
   build: {
     emptyOutDir: true,
     rollupOptions: {
       input: editorPages,
       output: {
         dir: 'dist',
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         manualChunks: {
           react: ['react', 'react-dom'],
           'tinymce': ['@tinymce/tinymce-react'],
